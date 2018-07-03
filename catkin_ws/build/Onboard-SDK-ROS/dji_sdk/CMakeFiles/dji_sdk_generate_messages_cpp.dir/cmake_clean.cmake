@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/dji_sdk_generate_messages_cpp"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHotpointTask.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/Waypoint.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MobileData.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWaypointAction.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/WaypointList.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/Gimbal.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWaypointTask.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWaypoint.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeed.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionStatus.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpload.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRate.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpGetInfo.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/SetLocalPosRef.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpAction.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/SetHardSync.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/SendMobileData.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpUpload.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/DroneTaskControl.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/SetupCameraStream.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpResetYaw.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/CameraAction.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOSetValue.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/QueryDroneVersion.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/Activation.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeed.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOConfig.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadius.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpAction.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetInfo.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/StereoDepthSubscription.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/Stereo240pSubscription.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/SDKControlAuthority.h"
+  "/home/wsn/catkin_ws/devel/include/dji_sdk/DroneArmControl.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/dji_sdk_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
