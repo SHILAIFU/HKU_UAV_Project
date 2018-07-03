@@ -1,0 +1,2 @@
+Onboard-SDK-ROS/dji_sdk:Onboard-SDK-ROS/dji_sdk_demo
+-DCATKIN_DEVEL_PREFIX=/home/wsn/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wsn/catkin_ws/install -G Unix Makefiles
