@@ -1,8 +1,8 @@
-# Install script for directory: /home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk
+# Install script for directory: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/wsn/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/wsn/HKU_UAV_Project/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,107 +33,107 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  include("/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/safe_execute_install.cmake")
+  include("/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/msg" TYPE FILE FILES
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/Gimbal.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/Waypoint.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/WaypointList.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MobileData.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypointAction.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypoint.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypointTask.msg"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionHotpointTask.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/Gimbal.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/Waypoint.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/WaypointList.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MobileData.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypointAction.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypoint.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypointTask.msg"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionHotpointTask.msg"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/srv" TYPE FILE FILES
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/Activation.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/CameraAction.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/DroneTaskControl.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SDKControlAuthority.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SetLocalPosRef.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MFIOConfig.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MFIOSetValue.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/DroneArmControl.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionStatus.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpAction.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpAction.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpUpload.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpSetSpeed.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpGetSpeed.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpGetInfo.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpUpload.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpGetInfo.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpUpdateYawRate.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpUpdateRadius.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpResetYaw.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SendMobileData.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SetHardSync.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/QueryDroneVersion.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/Stereo240pSubscription.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/StereoVGASubscription.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/StereoDepthSubscription.srv"
-    "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SetupCameraStream.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/Activation.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/CameraAction.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/DroneTaskControl.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SDKControlAuthority.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SetLocalPosRef.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MFIOConfig.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MFIOSetValue.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/DroneArmControl.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionStatus.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpAction.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpAction.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpUpload.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpSetSpeed.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpGetSpeed.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionWpGetInfo.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpUpload.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpGetInfo.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpUpdateYawRate.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpUpdateRadius.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/MissionHpResetYaw.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SendMobileData.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SetHardSync.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/QueryDroneVersion.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/Stereo240pSubscription.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/StereoVGASubscription.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/StereoDepthSubscription.srv"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/SetupCameraStream.srv"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/cmake" TYPE FILE FILES "/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdk-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/cmake" TYPE FILE FILES "/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdk-msg-paths.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/devel/include/dji_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/devel/share/roseus/ros/dji_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/share/roseus/ros/dji_sdk")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/devel/share/common-lisp/ros/dji_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/share/common-lisp/ros/dji_sdk")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/devel/share/gennodejs/ros/dji_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/share/gennodejs/ros/dji_sdk")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/wsn/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk" REGEX "/\\_\\_init\\_\\_\\.py$" EXCLUDE REGEX "/\\_\\_init\\_\\_\\.pyc$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk" REGEX "/\\_\\_init\\_\\_\\.py$" EXCLUDE REGEX "/\\_\\_init\\_\\_\\.pyc$" EXCLUDE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk" FILES_MATCHING REGEX "/home/wsn/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk/.+/__init__.pyc?$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk" FILES_MATCHING REGEX "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/python2.7/dist-packages/dji_sdk/.+/__init__.pyc?$")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdk.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdk.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/cmake" TYPE FILE FILES "/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdk-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/cmake" TYPE FILE FILES "/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdk-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/cmake" TYPE FILE FILES
-    "/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdkConfig.cmake"
-    "/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdkConfig-version.cmake"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdkConfig.cmake"
+    "/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/catkin_generated/installspace/dji_sdkConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk" TYPE FILE FILES "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk" TYPE FILE FILES "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dji_sdk" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/dji_sdk" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -143,7 +143,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_sdk/dji_sdk_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dji_sdk" TYPE EXECUTABLE FILES "/home/wsn/catkin_ws/devel/lib/dji_sdk/dji_sdk_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/dji_sdk" TYPE EXECUTABLE FILES "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk/dji_sdk_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_sdk/dji_sdk_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/dji_sdk/dji_sdk_node")
     file(RPATH_CHANGE
@@ -157,6 +157,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/launch" TYPE DIRECTORY FILES "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dji_sdk/launch" TYPE DIRECTORY FILES "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/launch")
 endif()
 

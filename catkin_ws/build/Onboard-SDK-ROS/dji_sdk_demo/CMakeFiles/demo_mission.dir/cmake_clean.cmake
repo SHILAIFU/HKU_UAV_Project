@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo_mission.dir/src/demo_mission.cpp.o"
-  "/home/wsn/catkin_ws/devel/lib/dji_sdk_demo/demo_mission.pdb"
-  "/home/wsn/catkin_ws/devel/lib/dji_sdk_demo/demo_mission"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mission.pdb"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mission"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wsn/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wsn/catkin_ws/build
+CMAKE_BINARY_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/build
 
 # Utility rule file for _dji_sdk_generate_messages_check_deps_DroneTaskControl.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/wsn/catkin_ws/build
 include Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/progress.make
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl:
-	cd /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_sdk /home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/DroneTaskControl.srv 
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/srv/DroneTaskControl.srv 
 
 _dji_sdk_generate_messages_check_deps_DroneTaskControl: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl
 _dji_sdk_generate_messages_check_deps_DroneTaskControl: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/build.make
@@ -67,10 +67,10 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTa
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/build
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/clean:
-	cd /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && $(CMAKE_COMMAND) -P CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/cmake_clean.cmake
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && $(CMAKE_COMMAND) -P CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/cmake_clean.cmake
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/clean
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/depend:
-	cd /home/wsn/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsn/catkin_ws/src /home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk /home/wsn/catkin_ws/build /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsn/HKU_UAV_Project/catkin_ws/src /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/build /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/depend
 

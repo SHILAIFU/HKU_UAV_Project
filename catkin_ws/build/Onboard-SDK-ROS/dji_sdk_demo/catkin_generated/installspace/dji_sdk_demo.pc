@@ -1,8 +1,8 @@
-prefix=/home/wsn/catkin_ws/install
+prefix=/home/wsn/HKU_UAV_Project/catkin_ws/install
 
 Name: dji_sdk_demo
 Description: Description of dji_sdk_demo
 Version: 0.1.9
 Cflags: 
-Libs: -L/home/wsn/catkin_ws/install/lib 
+Libs: -L/home/wsn/HKU_UAV_Project/catkin_ws/install/lib 
 Requires: 

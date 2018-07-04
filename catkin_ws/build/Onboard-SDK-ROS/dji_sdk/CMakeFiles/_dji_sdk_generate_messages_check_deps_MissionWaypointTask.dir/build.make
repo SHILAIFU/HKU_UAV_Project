@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wsn/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wsn/catkin_ws/build
+CMAKE_BINARY_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/build
 
 # Utility rule file for _dji_sdk_generate_messages_check_deps_MissionWaypointTask.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/wsn/catkin_ws/build
 include Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/progress.make
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask:
-	cd /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_sdk /home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypointTask.msg dji_sdk/MissionWaypoint:dji_sdk/MissionWaypointAction
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/msg/MissionWaypointTask.msg dji_sdk/MissionWaypoint:dji_sdk/MissionWaypointAction
 
 _dji_sdk_generate_messages_check_deps_MissionWaypointTask: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask
 _dji_sdk_generate_messages_check_deps_MissionWaypointTask: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/build.make
@@ -67,10 +67,10 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Mission
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/build
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/clean:
-	cd /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && $(CMAKE_COMMAND) -P CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/cmake_clean.cmake
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && $(CMAKE_COMMAND) -P CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/cmake_clean.cmake
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/clean
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/depend:
-	cd /home/wsn/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsn/catkin_ws/src /home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk /home/wsn/catkin_ws/build /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsn/HKU_UAV_Project/catkin_ws/src /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/build /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/depend
 

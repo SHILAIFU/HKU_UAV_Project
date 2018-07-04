@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/src/demo_mfio.cpp" "/home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mfio.dir/src/demo_mfio.cpp.o"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/src/demo_mfio.cpp" "/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mfio.dir/src/demo_mfio.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,9 +18,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include"
-  "/home/wsn/catkin_ws/devel/include"
-  "/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/devel/include"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

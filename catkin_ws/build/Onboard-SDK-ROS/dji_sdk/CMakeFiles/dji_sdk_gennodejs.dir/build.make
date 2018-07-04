@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wsn/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wsn/catkin_ws/build
+CMAKE_BINARY_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/build
 
 # Utility rule file for dji_sdk_gennodejs.
 
@@ -63,10 +63,10 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/build: dji_sdk_gennodej
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/build
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/clean:
-	cd /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && $(CMAKE_COMMAND) -P CMakeFiles/dji_sdk_gennodejs.dir/cmake_clean.cmake
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk && $(CMAKE_COMMAND) -P CMakeFiles/dji_sdk_gennodejs.dir/cmake_clean.cmake
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/clean
 
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/depend:
-	cd /home/wsn/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsn/catkin_ws/src /home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk /home/wsn/catkin_ws/build /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk /home/wsn/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsn/HKU_UAV_Project/catkin_ws/src /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/build /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/depend
 

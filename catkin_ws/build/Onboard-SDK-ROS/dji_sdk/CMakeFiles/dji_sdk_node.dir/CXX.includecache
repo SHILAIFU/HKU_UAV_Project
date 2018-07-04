@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/Activation.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/Activation.h
 ros/service_traits.h
 -
 dji_sdk/ActivationRequest.h
@@ -14,7 +14,7 @@ dji_sdk/ActivationRequest.h
 dji_sdk/ActivationResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/ActivationRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/ActivationRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/ActivationResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/ActivationResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/CameraAction.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/CameraAction.h
 ros/service_traits.h
 -
 dji_sdk/CameraActionRequest.h
@@ -54,7 +54,7 @@ dji_sdk/CameraActionRequest.h
 dji_sdk/CameraActionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/CameraActionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/CameraActionRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/CameraActionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/CameraActionResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/DroneArmControl.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/DroneArmControl.h
 ros/service_traits.h
 -
 dji_sdk/DroneArmControlRequest.h
@@ -94,7 +94,7 @@ dji_sdk/DroneArmControlRequest.h
 dji_sdk/DroneArmControlResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/DroneArmControlRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/DroneArmControlRequest.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/DroneArmControlResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/DroneArmControlResponse.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/DroneTaskControl.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/DroneTaskControl.h
 ros/service_traits.h
 -
 dji_sdk/DroneTaskControlRequest.h
@@ -134,7 +134,7 @@ dji_sdk/DroneTaskControlRequest.h
 dji_sdk/DroneTaskControlResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/DroneTaskControlRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/DroneTaskControlRequest.h
 string
 -
 vector
@@ -150,7 +150,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/DroneTaskControlResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/DroneTaskControlResponse.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/Gimbal.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/Gimbal.h
 string
 -
 vector
@@ -184,7 +184,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOConfig.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MFIOConfig.h
 ros/service_traits.h
 -
 dji_sdk/MFIOConfigRequest.h
@@ -192,7 +192,7 @@ dji_sdk/MFIOConfigRequest.h
 dji_sdk/MFIOConfigResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOConfigRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MFIOConfigRequest.h
 string
 -
 vector
@@ -208,7 +208,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOConfigResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MFIOConfigResponse.h
 string
 -
 vector
@@ -224,7 +224,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOSetValue.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MFIOSetValue.h
 ros/service_traits.h
 -
 dji_sdk/MFIOSetValueRequest.h
@@ -232,7 +232,7 @@ dji_sdk/MFIOSetValueRequest.h
 dji_sdk/MFIOSetValueResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOSetValueRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MFIOSetValueRequest.h
 string
 -
 vector
@@ -248,7 +248,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MFIOSetValueResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MFIOSetValueResponse.h
 string
 -
 vector
@@ -264,7 +264,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHotpointTask.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHotpointTask.h
 string
 -
 vector
@@ -280,7 +280,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpAction.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpAction.h
 ros/service_traits.h
 -
 dji_sdk/MissionHpActionRequest.h
@@ -288,7 +288,7 @@ dji_sdk/MissionHpActionRequest.h
 dji_sdk/MissionHpActionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpActionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpActionRequest.h
 string
 -
 vector
@@ -304,7 +304,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpActionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpActionResponse.h
 string
 -
 vector
@@ -320,7 +320,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpGetInfo.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpGetInfo.h
 ros/service_traits.h
 -
 dji_sdk/MissionHpGetInfoRequest.h
@@ -328,7 +328,7 @@ dji_sdk/MissionHpGetInfoRequest.h
 dji_sdk/MissionHpGetInfoResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpGetInfoRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpGetInfoRequest.h
 string
 -
 vector
@@ -344,7 +344,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpGetInfoResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpGetInfoResponse.h
 string
 -
 vector
@@ -362,7 +362,7 @@ ros/message_operations.h
 dji_sdk/MissionHotpointTask.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpResetYaw.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpResetYaw.h
 ros/service_traits.h
 -
 dji_sdk/MissionHpResetYawRequest.h
@@ -370,7 +370,7 @@ dji_sdk/MissionHpResetYawRequest.h
 dji_sdk/MissionHpResetYawResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpResetYawRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpResetYawRequest.h
 string
 -
 vector
@@ -386,7 +386,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpResetYawResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpResetYawResponse.h
 string
 -
 vector
@@ -402,7 +402,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadius.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadius.h
 ros/service_traits.h
 -
 dji_sdk/MissionHpUpdateRadiusRequest.h
@@ -410,7 +410,7 @@ dji_sdk/MissionHpUpdateRadiusRequest.h
 dji_sdk/MissionHpUpdateRadiusResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadiusRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadiusRequest.h
 string
 -
 vector
@@ -426,7 +426,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadiusResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpdateRadiusResponse.h
 string
 -
 vector
@@ -442,7 +442,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRate.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRate.h
 ros/service_traits.h
 -
 dji_sdk/MissionHpUpdateYawRateRequest.h
@@ -450,7 +450,7 @@ dji_sdk/MissionHpUpdateYawRateRequest.h
 dji_sdk/MissionHpUpdateYawRateResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRateRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRateRequest.h
 string
 -
 vector
@@ -466,7 +466,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRateResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpdateYawRateResponse.h
 string
 -
 vector
@@ -482,7 +482,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUpload.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUpload.h
 ros/service_traits.h
 -
 dji_sdk/MissionHpUploadRequest.h
@@ -490,7 +490,7 @@ dji_sdk/MissionHpUploadRequest.h
 dji_sdk/MissionHpUploadResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUploadRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUploadRequest.h
 string
 -
 vector
@@ -508,7 +508,7 @@ ros/message_operations.h
 dji_sdk/MissionHotpointTask.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionHpUploadResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionHpUploadResponse.h
 string
 -
 vector
@@ -524,7 +524,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionStatus.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionStatus.h
 ros/service_traits.h
 -
 dji_sdk/MissionStatusRequest.h
@@ -532,7 +532,7 @@ dji_sdk/MissionStatusRequest.h
 dji_sdk/MissionStatusResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionStatusRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionStatusRequest.h
 string
 -
 vector
@@ -548,7 +548,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionStatusResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionStatusResponse.h
 string
 -
 vector
@@ -564,7 +564,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWaypoint.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWaypoint.h
 string
 -
 vector
@@ -582,7 +582,7 @@ ros/message_operations.h
 dji_sdk/MissionWaypointAction.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWaypointAction.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWaypointAction.h
 string
 -
 vector
@@ -598,7 +598,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWaypointTask.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWaypointTask.h
 string
 -
 vector
@@ -616,7 +616,7 @@ ros/message_operations.h
 dji_sdk/MissionWaypoint.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpAction.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpAction.h
 ros/service_traits.h
 -
 dji_sdk/MissionWpActionRequest.h
@@ -624,7 +624,7 @@ dji_sdk/MissionWpActionRequest.h
 dji_sdk/MissionWpActionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpActionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpActionRequest.h
 string
 -
 vector
@@ -640,7 +640,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpActionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpActionResponse.h
 string
 -
 vector
@@ -656,7 +656,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetInfo.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpGetInfo.h
 ros/service_traits.h
 -
 dji_sdk/MissionWpGetInfoRequest.h
@@ -664,7 +664,7 @@ dji_sdk/MissionWpGetInfoRequest.h
 dji_sdk/MissionWpGetInfoResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetInfoRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpGetInfoRequest.h
 string
 -
 vector
@@ -680,7 +680,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetInfoResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpGetInfoResponse.h
 string
 -
 vector
@@ -698,7 +698,7 @@ ros/message_operations.h
 dji_sdk/MissionWaypointTask.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeed.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeed.h
 ros/service_traits.h
 -
 dji_sdk/MissionWpGetSpeedRequest.h
@@ -706,7 +706,7 @@ dji_sdk/MissionWpGetSpeedRequest.h
 dji_sdk/MissionWpGetSpeedResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeedRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeedRequest.h
 string
 -
 vector
@@ -722,7 +722,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeedResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpGetSpeedResponse.h
 string
 -
 vector
@@ -738,7 +738,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeed.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeed.h
 ros/service_traits.h
 -
 dji_sdk/MissionWpSetSpeedRequest.h
@@ -746,7 +746,7 @@ dji_sdk/MissionWpSetSpeedRequest.h
 dji_sdk/MissionWpSetSpeedResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeedRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeedRequest.h
 string
 -
 vector
@@ -762,7 +762,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeedResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpSetSpeedResponse.h
 string
 -
 vector
@@ -778,7 +778,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpUpload.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpUpload.h
 ros/service_traits.h
 -
 dji_sdk/MissionWpUploadRequest.h
@@ -786,7 +786,7 @@ dji_sdk/MissionWpUploadRequest.h
 dji_sdk/MissionWpUploadResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpUploadRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpUploadRequest.h
 string
 -
 vector
@@ -804,7 +804,7 @@ ros/message_operations.h
 dji_sdk/MissionWaypointTask.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MissionWpUploadResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MissionWpUploadResponse.h
 string
 -
 vector
@@ -820,7 +820,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/MobileData.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/MobileData.h
 string
 -
 vector
@@ -836,7 +836,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/QueryDroneVersion.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/QueryDroneVersion.h
 ros/service_traits.h
 -
 dji_sdk/QueryDroneVersionRequest.h
@@ -844,7 +844,7 @@ dji_sdk/QueryDroneVersionRequest.h
 dji_sdk/QueryDroneVersionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/QueryDroneVersionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/QueryDroneVersionRequest.h
 string
 -
 vector
@@ -860,7 +860,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/QueryDroneVersionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/QueryDroneVersionResponse.h
 string
 -
 vector
@@ -876,7 +876,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SDKControlAuthority.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SDKControlAuthority.h
 ros/service_traits.h
 -
 dji_sdk/SDKControlAuthorityRequest.h
@@ -884,7 +884,7 @@ dji_sdk/SDKControlAuthorityRequest.h
 dji_sdk/SDKControlAuthorityResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SDKControlAuthorityRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SDKControlAuthorityRequest.h
 string
 -
 vector
@@ -900,7 +900,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SDKControlAuthorityResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SDKControlAuthorityResponse.h
 string
 -
 vector
@@ -916,7 +916,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SendMobileData.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SendMobileData.h
 ros/service_traits.h
 -
 dji_sdk/SendMobileDataRequest.h
@@ -924,7 +924,7 @@ dji_sdk/SendMobileDataRequest.h
 dji_sdk/SendMobileDataResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SendMobileDataRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SendMobileDataRequest.h
 string
 -
 vector
@@ -940,7 +940,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SendMobileDataResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SendMobileDataResponse.h
 string
 -
 vector
@@ -956,7 +956,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetHardSync.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetHardSync.h
 ros/service_traits.h
 -
 dji_sdk/SetHardSyncRequest.h
@@ -964,7 +964,7 @@ dji_sdk/SetHardSyncRequest.h
 dji_sdk/SetHardSyncResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetHardSyncRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetHardSyncRequest.h
 string
 -
 vector
@@ -980,7 +980,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetHardSyncResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetHardSyncResponse.h
 string
 -
 vector
@@ -996,7 +996,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetLocalPosRef.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRef.h
 ros/service_traits.h
 -
 dji_sdk/SetLocalPosRefRequest.h
@@ -1004,7 +1004,7 @@ dji_sdk/SetLocalPosRefRequest.h
 dji_sdk/SetLocalPosRefResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetLocalPosRefRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRefRequest.h
 string
 -
 vector
@@ -1020,7 +1020,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetLocalPosRefResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRefResponse.h
 string
 -
 vector
@@ -1036,7 +1036,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetupCameraStream.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetupCameraStream.h
 ros/service_traits.h
 -
 dji_sdk/SetupCameraStreamRequest.h
@@ -1044,7 +1044,7 @@ dji_sdk/SetupCameraStreamRequest.h
 dji_sdk/SetupCameraStreamResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetupCameraStreamRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetupCameraStreamRequest.h
 string
 -
 vector
@@ -1060,7 +1060,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/SetupCameraStreamResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetupCameraStreamResponse.h
 string
 -
 vector
@@ -1076,7 +1076,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/Stereo240pSubscription.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/Stereo240pSubscription.h
 ros/service_traits.h
 -
 dji_sdk/Stereo240pSubscriptionRequest.h
@@ -1084,7 +1084,7 @@ dji_sdk/Stereo240pSubscriptionRequest.h
 dji_sdk/Stereo240pSubscriptionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/Stereo240pSubscriptionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/Stereo240pSubscriptionRequest.h
 string
 -
 vector
@@ -1100,7 +1100,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/Stereo240pSubscriptionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/Stereo240pSubscriptionResponse.h
 string
 -
 vector
@@ -1116,7 +1116,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/StereoDepthSubscription.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoDepthSubscription.h
 ros/service_traits.h
 -
 dji_sdk/StereoDepthSubscriptionRequest.h
@@ -1124,7 +1124,7 @@ dji_sdk/StereoDepthSubscriptionRequest.h
 dji_sdk/StereoDepthSubscriptionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/StereoDepthSubscriptionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoDepthSubscriptionRequest.h
 string
 -
 vector
@@ -1140,7 +1140,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/StereoDepthSubscriptionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoDepthSubscriptionResponse.h
 string
 -
 vector
@@ -1156,7 +1156,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 ros/service_traits.h
 -
 dji_sdk/StereoVGASubscriptionRequest.h
@@ -1164,7 +1164,7 @@ dji_sdk/StereoVGASubscriptionRequest.h
 dji_sdk/StereoVGASubscriptionResponse.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 string
 -
 vector
@@ -1180,7 +1180,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
 string
 -
 vector
@@ -1196,7 +1196,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 ros/ros.h
 -
 tf/tf.h
@@ -1286,27 +1286,27 @@ dji_sdk/SetupCameraStream.h
 djiosdk/dji_vehicle.hpp
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/main.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/main.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_control.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_control.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_mission_services.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_mission_services.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_mobile_comm.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_mobile_comm.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_publisher.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_publisher.cpp
 dji_sdk/dji_sdk_node.h
 -
 tf/tf.h
@@ -1314,11 +1314,11 @@ tf/tf.h
 sensor_msgs/Joy.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_services.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_services.cpp
 dji_sdk/dji_sdk_node.h
 -
 
-/home/wsn/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_subscriber.cpp
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_subscriber.cpp
 dji_sdk/dji_sdk_node.h
 -
 
