@@ -95,7 +95,7 @@ int main(int argc, char** argv)
     // square_mission.setTarget(0, 20, 3, 60);
     // square_mission.state = 1;
     // ROS_INFO("##### Start route %d ....", square_mission.state);
-    DELAY(10);
+    SLEEP(10);
     takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_LAND);
 
   }

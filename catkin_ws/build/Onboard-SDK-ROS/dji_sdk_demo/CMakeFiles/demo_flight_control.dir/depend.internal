@@ -15,6 +15,7 @@ Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_
  /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRefRequest.h
  /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRefResponse.h
  /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk.h
+ /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include/dji_sdk_demo/Config.h
  /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include/dji_sdk_demo/demo_flight_control.h
  /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/src/demo_flight_control.cpp
  /opt/ros/kinetic/include/geometry_msgs/Point.h

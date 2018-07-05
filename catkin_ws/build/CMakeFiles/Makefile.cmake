@@ -22,6 +22,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "Onboard-SDK-ROS/dji_sdk/cmake/dji_sdk-genmsg.cmake"
   "Onboard-SDK-ROS/dji_sdk_demo/catkin_generated/ordered_paths.cmake"
   "Onboard-SDK-ROS/dji_sdk_demo/catkin_generated/package.cmake"
+  "Onboard-SDK-ROS/uav_test/catkin_generated/ordered_paths.cmake"
+  "Onboard-SDK-ROS/uav_test/catkin_generated/package.cmake"
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
@@ -38,6 +40,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/CMakeLists.txt"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/cmake-modules/FindAdvancedSensing.cmake"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/package.xml"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/CMakeLists.txt"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/package.xml"
   "/opt/ros/kinetic/share/OpenCV-3.2.0-dev/OpenCVConfig-version.cmake"
   "/opt/ros/kinetic/share/OpenCV-3.2.0-dev/OpenCVConfig.cmake"
   "/opt/ros/kinetic/share/OpenCV-3.2.0-dev/OpenCVModules-none.cmake"
@@ -313,6 +317,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Guidance-SDK-ROS/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Onboard-SDK-ROS/dji_sdk/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Onboard-SDK-ROS/uav_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -415,4 +420,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mission.dir/DependInfo.cmake"
   "Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_local_position_control.dir/DependInfo.cmake"
   "Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/DependInfo.cmake"
+  "Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/DependInfo.cmake"
   )

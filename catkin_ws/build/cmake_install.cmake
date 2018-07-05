@@ -120,6 +120,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/wsn/HKU_UAV_Project/catkin_ws/build/Guidance-SDK-ROS/cmake_install.cmake")
   include("/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk/cmake_install.cmake")
   include("/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/dji_sdk_demo/cmake_install.cmake")
+  include("/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/cmake_install.cmake")
 
 endif()
 

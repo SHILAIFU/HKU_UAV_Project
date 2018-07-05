@@ -1439,6 +1439,19 @@ demo_mobile_comm/fast:
 	$(MAKE) -f Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/build.make Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/build
 .PHONY : demo_mobile_comm/fast
 
+#=============================================================================
+# Target rules for targets named demo
+
+# Build rule for target.
+demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo
+.PHONY : demo
+
+# fast build rule for target.
+demo/fast:
+	$(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/build
+.PHONY : demo/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1550,6 +1563,7 @@ help:
 	@echo "... demo_mission"
 	@echo "... demo_local_position_control"
 	@echo "... demo_mobile_comm"
+	@echo "... demo"
 .PHONY : help
 
 
