@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 #else 
     ROS_INFO("A3/N3 taking off!");
     takeoff_result = monitoredTakeoff();
-
+#endif
   if(takeoff_result)
   {
     // square_mission.reset();
