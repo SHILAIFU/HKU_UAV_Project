@@ -12,6 +12,8 @@
 #include "dji_sdk_demo/demo_flight_control.h"
 #include "dji_sdk/dji_sdk.h"
 
+#include "dji_sdk_demo/Config.h"
+
 const float deg2rad = C_PI/180.0;
 const float rad2deg = 180.0/C_PI;
 
@@ -67,16 +69,22 @@ int main(int argc, char** argv)
     return 1;
   }
 
-  if(is_M100())
-  {
+  // if(is_M100())
+  // {
+  //   ROS_INFO("M100 taking off!");
+  //   takeoff_result = M100monitoredTakeoff();
+  // }
+  // else
+  // {
+  //   ROS_INFO("A3/N3 taking off!");
+  //   takeoff_result = monitoredTakeoff();
+  // }
+#ifdef M100
     ROS_INFO("M100 taking off!");
     takeoff_result = M100monitoredTakeoff();
-  }
-  else
-  {
+#else 
     ROS_INFO("A3/N3 taking off!");
     takeoff_result = monitoredTakeoff();
-  }
 
   if(takeoff_result)
   {
@@ -247,7 +255,7 @@ bool takeoff_land(int task)
 
   if(!droneTaskControl.response.result)
   {
-    ROS_ERROR("takeoff_land fail");
+    ROS_ERROR("takeoff/land fail");
     return false;
   }
 
@@ -379,82 +387,82 @@ void display_mode_callback(const std_msgs::UInt8::ConstPtr& msg)
 }
 
 
-/*!
- * This function demos how to use the flight_status
- * and the more detailed display_mode (only for A3/N3)
- * to monitor the take off process with some error
- * handling. Note M100 flight status is different
- * from A3/N3 flight status.
- */
-bool
-monitoredTakeoff()
-{
-  ros::Time start_time = ros::Time::now();
+// /*!
+//  * This function demos how to use the flight_status
+//  * and the more detailed display_mode (only for A3/N3)
+//  * to monitor the take off process with some error
+//  * handling. Note M100 flight status is different
+//  * from A3/N3 flight status.
+//  */
+// bool
+// monitoredTakeoff()
+// {
+//   ros::Time start_time = ros::Time::now();
 
-  if(!takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_TAKEOFF)) {
-    return false;
-  }
+//   if(!takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_TAKEOFF)) {
+//     return false;
+//   }
 
-  ros::Duration(0.01).sleep();
-  ros::spinOnce();
+//   ros::Duration(0.01).sleep();
+//   ros::spinOnce();
 
-  // Step 1.1: Spin the motor
-  while (flight_status != DJISDK::FlightStatus::STATUS_ON_GROUND &&
-         display_mode != DJISDK::DisplayMode::MODE_ENGINE_START &&
-         ros::Time::now() - start_time < ros::Duration(5)) {
-    ros::Duration(0.01).sleep();
-    ros::spinOnce();
-  }
+//   // Step 1.1: Spin the motor
+//   while (flight_status != DJISDK::FlightStatus::STATUS_ON_GROUND &&
+//          display_mode != DJISDK::DisplayMode::MODE_ENGINE_START &&
+//          ros::Time::now() - start_time < ros::Duration(5)) {
+//     ros::Duration(0.01).sleep();
+//     ros::spinOnce();
+//   }
 
-  if(ros::Time::now() - start_time > ros::Duration(5)) {
-    ROS_ERROR("Takeoff failed. Motors are not spinnning.");
-    return false;
-  }
-  else {
-    start_time = ros::Time::now();
-    ROS_INFO("Motor Spinning ...");
-    ros::spinOnce();
-  }
+//   if(ros::Time::now() - start_time > ros::Duration(5)) {
+//     ROS_ERROR("Takeoff failed. Motors are not spinnning.");
+//     return false;
+//   }
+//   else {
+//     start_time = ros::Time::now();
+//     ROS_INFO("Motor Spinning ...");
+//     ros::spinOnce();
+//   }
 
 
-  // Step 1.2: Get in to the air
-  while (flight_status != DJISDK::FlightStatus::STATUS_IN_AIR &&
-          (display_mode != DJISDK::DisplayMode::MODE_ASSISTED_TAKEOFF || display_mode != DJISDK::DisplayMode::MODE_AUTO_TAKEOFF) &&
-          ros::Time::now() - start_time < ros::Duration(20)) {
-    ros::Duration(0.01).sleep();
-    ros::spinOnce();
-  }
+//   // Step 1.2: Get in to the air
+//   while (flight_status != DJISDK::FlightStatus::STATUS_IN_AIR &&
+//           (display_mode != DJISDK::DisplayMode::MODE_ASSISTED_TAKEOFF || display_mode != DJISDK::DisplayMode::MODE_AUTO_TAKEOFF) &&
+//           ros::Time::now() - start_time < ros::Duration(20)) {
+//     ros::Duration(0.01).sleep();
+//     ros::spinOnce();
+//   }
 
-  if(ros::Time::now() - start_time > ros::Duration(20)) {
-    ROS_ERROR("Takeoff failed. Aircraft is still on the ground, but the motors are spinning.");
-    return false;
-  }
-  else {
-    start_time = ros::Time::now();
-    ROS_INFO("Ascending...");
-    ros::spinOnce();
-  }
+//   if(ros::Time::now() - start_time > ros::Duration(20)) {
+//     ROS_ERROR("Takeoff failed. Aircraft is still on the ground, but the motors are spinning.");
+//     return false;
+//   }
+//   else {
+//     start_time = ros::Time::now();
+//     ROS_INFO("Ascending...");
+//     ros::spinOnce();
+//   }
 
-  // Final check: Finished takeoff
-  while ( (display_mode == DJISDK::DisplayMode::MODE_ASSISTED_TAKEOFF || display_mode == DJISDK::DisplayMode::MODE_AUTO_TAKEOFF) &&
-          ros::Time::now() - start_time < ros::Duration(20)) {
-    ros::Duration(0.01).sleep();
-    ros::spinOnce();
-  }
+//   // Final check: Finished takeoff
+//   while ( (display_mode == DJISDK::DisplayMode::MODE_ASSISTED_TAKEOFF || display_mode == DJISDK::DisplayMode::MODE_AUTO_TAKEOFF) &&
+//           ros::Time::now() - start_time < ros::Duration(20)) {
+//     ros::Duration(0.01).sleep();
+//     ros::spinOnce();
+//   }
 
-  if ( display_mode != DJISDK::DisplayMode::MODE_P_GPS || display_mode != DJISDK::DisplayMode::MODE_ATTITUDE)
-  {
-    ROS_INFO("Successful takeoff!");
-    start_time = ros::Time::now();
-  }
-  else
-  {
-    ROS_ERROR("Takeoff finished, but the aircraft is in an unexpected mode. Please connect DJI GO.");
-    return false;
-  }
+//   if ( display_mode != DJISDK::DisplayMode::MODE_P_GPS || display_mode != DJISDK::DisplayMode::MODE_ATTITUDE)
+//   {
+//     ROS_INFO("Successful takeoff!");
+//     start_time = ros::Time::now();
+//   }
+//   else
+//   {
+//     ROS_ERROR("Takeoff finished, but the aircraft is in an unexpected mode. Please connect DJI GO.");
+//     return false;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
 
 /*!

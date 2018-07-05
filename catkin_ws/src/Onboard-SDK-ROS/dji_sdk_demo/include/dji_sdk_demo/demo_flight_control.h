@@ -106,7 +106,7 @@ bool obtain_control();
 
 bool is_M100();
 
-bool monitoredTakeoff();
+// bool monitoredTakeoff();
 
 bool M100monitoredTakeoff();
 
