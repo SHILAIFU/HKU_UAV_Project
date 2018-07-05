@@ -86,6 +86,7 @@ int main(int argc, char** argv)
     ROS_INFO("A3/N3 taking off!");
     takeoff_result = monitoredTakeoff();
 #endif
+
   if(takeoff_result)
   {
     // square_mission.reset();
@@ -94,7 +95,7 @@ int main(int argc, char** argv)
     // square_mission.setTarget(0, 20, 3, 60);
     // square_mission.state = 1;
     // ROS_INFO("##### Start route %d ....", square_mission.state);
-    ros::Duration(10).sleep();
+    DELAY(10);
     takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_LAND);
 
   }
