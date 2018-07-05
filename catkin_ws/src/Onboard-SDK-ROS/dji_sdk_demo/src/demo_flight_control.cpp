@@ -80,12 +80,15 @@ int main(int argc, char** argv)
 
   if(takeoff_result)
   {
-    square_mission.reset();
-    square_mission.start_gps_location = current_gps;
-    square_mission.start_local_position = current_local_pos;
-    square_mission.setTarget(0, 20, 3, 60);
-    square_mission.state = 1;
-    ROS_INFO("##### Start route %d ....", square_mission.state);
+    // square_mission.reset();
+    // square_mission.start_gps_location = current_gps;
+    // square_mission.start_local_position = current_local_pos;
+    // square_mission.setTarget(0, 20, 3, 60);
+    // square_mission.state = 1;
+    // ROS_INFO("##### Start route %d ....", square_mission.state);
+    ros::Duration(10).sleep();
+    takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_LAND);
+
   }
 
   ros::spin();
