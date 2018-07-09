@@ -89,14 +89,14 @@ int main(int argc, char** argv)
 
   if(takeoff_result)
   {
-    // square_mission.reset();
-    // square_mission.start_gps_location = current_gps;
-    // square_mission.start_local_position = current_local_pos;
-    // square_mission.setTarget(0, 20, 3, 60);
-    // square_mission.state = 1;
-    // ROS_INFO("##### Start route %d ....", square_mission.state);
-    SLEEP(10);
-    takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_LAND);
+    square_mission.reset();
+    square_mission.start_gps_location = current_gps;
+    square_mission.start_local_position = current_local_pos;
+    square_mission.setTarget(0, 20, 3, 60);
+    square_mission.state = 1;
+    ROS_INFO("##### Start route %d ....", square_mission.state);
+    // SLEEP(10);
+    // takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_LAND);
 
   }
 
@@ -131,6 +131,8 @@ geometry_msgs::Vector3 toEulerAngle(geometry_msgs::Quaternion quat)
   R_FLU2ENU.getRPY(ans.x, ans.y, ans.z);
   return ans;
 }
+
+
 
 void Mission::step()
 {
@@ -196,7 +198,7 @@ void Mission::step()
     controlVelYawRate.axes.push_back(0);
     controlVelYawRate.axes.push_back(0);
     controlVelYawRate.axes.push_back(flag);
-
+   
     ctrlBrakePub.publish(controlVelYawRate);
     break_counter++;
     return;
@@ -210,6 +212,7 @@ void Mission::step()
     controlPosYaw.axes.push_back(yCmd);
     controlPosYaw.axes.push_back(zCmd);
     controlPosYaw.axes.push_back(yawDesiredRad);
+    //  ROS_INFO("=====xCmd=%f, yCmd=%f, zCmd=%f, yawCmd=%f ...", xCmd,localOffset.y,zCmd,yawInRad);
     ctrlPosYawPub.publish(controlPosYaw);
   }
 
@@ -306,7 +309,7 @@ void gps_callback(const sensor_msgs::NavSatFix::ConstPtr& msg)
   static ros::Time start_time = ros::Time::now();
   ros::Duration elapsed_time = ros::Time::now() - start_time;
   current_gps = *msg;
-
+// ROS_INFO("GPS CONTINUED");
   // Down sampled to 50Hz loop
   if(elapsed_time > ros::Duration(0.02))
   {

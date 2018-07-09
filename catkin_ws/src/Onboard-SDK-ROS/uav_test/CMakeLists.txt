@@ -154,10 +154,12 @@ include_directories(
 # )
 
 set(${PROJECT_NAME}_SOURCES
-    src/demo_flight_control.cpp)
+    src/demo_flight_control.cpp,
+    src/demo_mission.cpp)
 
 add_executable(demo
-        src/demo_flight_control.cpp)
+        src/demo_flight_control.cpp
+        )
 
 target_link_libraries(demo
         ${catkin_LIBRARIES}
@@ -165,7 +167,13 @@ target_link_libraries(demo
         )
 add_dependencies(demo dji_sdk_generate_messages_cpp)
 
-
+add_executable(demo2
+        src/demo_mission.cpp)
+target_link_libraries(demo2
+        ${catkin_LIBRARIES}
+        ${DJIOSDK_LIBRARIES}
+        )
+add_dependencies(demo2 dji_sdk_generate_messages_cpp)
 #############
 ## Install ##
 #############

@@ -88,6 +88,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -98,17 +109,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -122,16 +122,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -180,6 +180,21 @@ demo/fast:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
+# Convenience name for target.
+Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/rule
+.PHONY : Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/rule
+
+# Convenience name for target.
+demo2: Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/rule
+
+.PHONY : demo2
+
+# fast build rule for target.
+demo2/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/build
+.PHONY : demo2/fast
+
 src/demo_flight_control.o: src/demo_flight_control.cpp.o
 
 .PHONY : src/demo_flight_control.o
@@ -207,6 +222,33 @@ src/demo_flight_control.cpp.s:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.s
 .PHONY : src/demo_flight_control.cpp.s
 
+src/demo_mission.o: src/demo_mission.cpp.o
+
+.PHONY : src/demo_mission.o
+
+# target to build an object file
+src/demo_mission.cpp.o:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/src/demo_mission.cpp.o
+.PHONY : src/demo_mission.cpp.o
+
+src/demo_mission.i: src/demo_mission.cpp.i
+
+.PHONY : src/demo_mission.i
+
+# target to preprocess a source file
+src/demo_mission.cpp.i:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/src/demo_mission.cpp.i
+.PHONY : src/demo_mission.cpp.i
+
+src/demo_mission.s: src/demo_mission.cpp.s
+
+.PHONY : src/demo_mission.s
+
+# target to generate assembly for a file
+src/demo_mission.cpp.s:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/build.make Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/src/demo_mission.cpp.s
+.PHONY : src/demo_mission.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,14 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... demo"
-	@echo "... install/local"
+	@echo "... demo2"
 	@echo "... install"
-	@echo "... test"
+	@echo "... install/local"
 	@echo "... src/demo_flight_control.o"
 	@echo "... src/demo_flight_control.i"
 	@echo "... src/demo_flight_control.s"
+	@echo "... src/demo_mission.o"
+	@echo "... src/demo_mission.i"
+	@echo "... src/demo_mission.s"
 .PHONY : help
 
 

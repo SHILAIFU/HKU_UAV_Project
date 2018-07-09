@@ -134,8 +134,9 @@
 /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/edit_cache.dir
 /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/install/strip.dir
 /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/list_install_components.dir
+/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/test.dir
 /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/rebuild_cache.dir
 /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir
-/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/install/local.dir
+/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir
 /home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/install.dir
-/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/test.dir
+/home/wsn/HKU_UAV_Project/catkin_ws/build/Onboard-SDK-ROS/uav_test/CMakeFiles/install/local.dir
