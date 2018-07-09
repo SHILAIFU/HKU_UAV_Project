@@ -155,7 +155,8 @@ include_directories(
 
 set(${PROJECT_NAME}_SOURCES
     src/demo_flight_control.cpp,
-    src/demo_mission.cpp)
+    src/demo_mission.cpp,
+    src/pid.cpp)
 
 add_executable(demo
         src/demo_flight_control.cpp
