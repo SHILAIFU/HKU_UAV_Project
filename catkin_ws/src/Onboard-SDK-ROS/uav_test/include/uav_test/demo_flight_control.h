@@ -14,7 +14,6 @@
 #include <dji_sdk/QueryDroneVersion.h>
 #include <dji_sdk/SetLocalPosRef.h>
 
-
 #include <tf/tf.h>
 #include <sensor_msgs/Joy.h>
 #define C_EARTH (double)6378137.0
@@ -26,24 +25,16 @@
 class Mission
 {
 public:
-
   int state;
-
-  int inbound_counter;
-  int outbound_counter;
-  int break_counter;
 
   float target_offset_x;
   float target_offset_y;
   float target_offset_z;
   float target_yaw;
-  sensor_msgs::NavSatFix start_gps_location;
-  geometry_msgs::Point start_local_position;
 
   bool finished;
 
-  Mission() :  inbound_counter(0), outbound_counter(0), break_counter(0),
-              target_offset_x(0.0), target_offset_y(0.0), target_offset_z(0.0),
+  Mission() : target_offset_x(0.0), target_offset_y(0.0), target_offset_z(0.0),
               finished(false)
   {
   }
@@ -55,34 +46,31 @@ public:
     target_offset_x = x;
     target_offset_y = y;
     target_offset_z = z;
-    target_yaw      = yaw;
+    target_yaw = yaw;
+    state = 1;
   }
 
   void reset()
   {
-    inbound_counter = 0;
-    outbound_counter = 0;
-    break_counter = 0;
     finished = false;
   }
-
 };
 
-void localOffsetFromGpsOffset(geometry_msgs::Vector3&  deltaNed,
-                         sensor_msgs::NavSatFix& target,
-                         sensor_msgs::NavSatFix& origin);
+// void localOffsetFromGpsOffset(geometry_msgs::Vector3&  deltaNed,
+//                          sensor_msgs::NavSatFix& target,
+//                          sensor_msgs::NavSatFix& origin);
 
 geometry_msgs::Vector3 toEulerAngle(geometry_msgs::Quaternion quat);
 
-void display_mode_callback(const std_msgs::UInt8::ConstPtr& msg);
+void display_mode_callback(const std_msgs::UInt8::ConstPtr &msg);
 
-void flight_status_callback(const std_msgs::UInt8::ConstPtr& msg);
+void flight_status_callback(const std_msgs::UInt8::ConstPtr &msg);
 
-void gps_callback(const sensor_msgs::NavSatFix::ConstPtr& msg);
+void gps_callback(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
-void attitude_callback(const geometry_msgs::QuaternionStamped::ConstPtr& msg);
+void attitude_callback(const geometry_msgs::QuaternionStamped::ConstPtr &msg);
 
-void local_position_callback(const geometry_msgs::PointStamped::ConstPtr& msg);
+void local_position_callback(const geometry_msgs::PointStamped::ConstPtr &msg);
 
 bool takeoff_land(int task);
 

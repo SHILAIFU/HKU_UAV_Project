@@ -200,6 +200,8 @@ tf/tf.h
 sensor_msgs/Joy.h
 -
 
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/include/uav_test/pid.h
+
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/demo_flight_control.cpp
 uav_test/demo_flight_control.h
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/uav_test/demo_flight_control.h
@@ -207,6 +209,8 @@ dji_sdk/dji_sdk.h
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/dji_sdk/dji_sdk.h
 uav_test/Config.h
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/uav_test/Config.h
+uav_test/pid.h
+/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/uav_test/pid.h
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

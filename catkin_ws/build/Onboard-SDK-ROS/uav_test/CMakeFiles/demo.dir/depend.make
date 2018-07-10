@@ -16,6 +16,7 @@ Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /hom
 Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk.h
 Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/include/uav_test/Config.h
 Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/include/uav_test/demo_flight_control.h
+Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/include/uav_test/pid.h
 Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/demo_flight_control.cpp
 Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
 Onboard-SDK-ROS/uav_test/CMakeFiles/demo.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PointStamped.h

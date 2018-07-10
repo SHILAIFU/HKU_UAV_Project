@@ -2,6 +2,7 @@
 #include "dji_sdk/dji_sdk.h"
 
 #include "uav_test/Config.h"
+#include "uav_test/pid.h"
 
 const float deg2rad = C_PI / 180.0;
 const float rad2deg = 180.0 / C_PI;
@@ -18,12 +19,20 @@ ros::Publisher ctrlBrakePub;
 uint8_t flight_status = 255;
 uint8_t display_mode = 255;
 sensor_msgs::NavSatFix current_gps;
+
 geometry_msgs::Quaternion current_atti;
 geometry_msgs::Point current_local_pos;
 
+sensor_msgs::NavSatFix zero_gps_location;
+
 Mission mymission;
 
+Pid_control pid_x, pid_y, pid_z, pid_yaw;
+
 float inputNumber_X, inputNumber_Y, inputNumber_Z, inputNumber_YAW;
+
+bool info_flag = false;
+
 int main(int argc, char **argv)
 {
   ros::init(argc, argv, "demo");
@@ -49,6 +58,11 @@ int main(int argc, char **argv)
   obtain_control();
   bool takeoff_result;
 
+  pid_x.PID_init(1.5, 0, 0, 2, -1);
+  pid_y.PID_init(1.5, 0, 0, 2, -1);
+  pid_z.PID_init(0.4, 0, 0, 2, -1);
+  pid_yaw.PID_init(0.4, 0, 0, 2, -2);
+
   if (!set_local_position()) // We need this for height
   {
     ROS_ERROR("GPS health insufficient - No local frame reference for height. Exiting.");
@@ -63,6 +77,7 @@ int main(int argc, char **argv)
     switch (inputChar)
     {
     case 'a':
+      set_local_position();
       ROS_INFO("M100 taking off!");
       takeoff_result = M100monitoredTakeoff();
       while (!takeoff_result)
@@ -76,17 +91,13 @@ int main(int argc, char **argv)
       std::cin >> inputNumber_YAW;
       ROS_INFO("Data recieve ! %f,%f,%f,%f", inputNumber_X, inputNumber_Y, inputNumber_Z, inputNumber_YAW);
       ros::spinOnce();
+
       mymission.reset();
-      mymission.start_gps_location = current_gps;
-      mymission.start_local_position = current_local_pos;
       mymission.setTarget(inputNumber_X, inputNumber_Y, inputNumber_Z, inputNumber_YAW);
-      mymission.state = 1;
+
       while (!mymission.finished || !mymission.state)
-      {
         ros::spinOnce();
-      }
       ROS_INFO("Mission successfully");
-      return 0;
       break;
     case 'b':
       M100landing();
@@ -96,6 +107,10 @@ int main(int argc, char **argv)
       break;
     case 'q':
       return 0;
+    case 'i':
+      info_flag = !info_flag;
+      ROS_INFO("+-+-+myx=%f, myy=%f, myz=%f", current_local_pos.x, current_local_pos.y, current_local_pos.z);
+      break;
     default:
       break;
     }
@@ -106,6 +121,8 @@ int main(int argc, char **argv)
 
 void M100landing()
 {
+  if(flight_status != DJISDK::M100FlightStatus::M100_STATUS_IN_AIR)
+
   ROS_INFO("land");
   takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_LAND);
 }
@@ -116,17 +133,17 @@ bool M100gohome()
   takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_GOHOME);
 }
 
-void localOffsetFromGpsOffset(geometry_msgs::Vector3 &deltaNed,
-                              sensor_msgs::NavSatFix &target,
-                              sensor_msgs::NavSatFix &origin)
-{
-  double deltaLon = target.longitude - origin.longitude;
-  double deltaLat = target.latitude - origin.latitude;
+// void localOffsetFromGpsOffset(geometry_msgs::Vector3 &deltaNed,
+//                               sensor_msgs::NavSatFix &target,
+//                               sensor_msgs::NavSatFix &origin)
+// {
+//   double deltaLon = target.longitude - origin.longitude;
+//   double deltaLat = target.latitude - origin.latitude;
 
-  deltaNed.y = deltaLat * deg2rad * C_EARTH;
-  deltaNed.x = deltaLon * deg2rad * C_EARTH * cos(deg2rad * target.latitude);
-  deltaNed.z = target.altitude - origin.altitude;
-}
+//   deltaNed.y = deltaLat * deg2rad * C_EARTH;
+//   deltaNed.x = deltaLon * deg2rad * C_EARTH * cos(deg2rad * target.latitude);
+//   deltaNed.z = target.altitude - origin.altitude;
+// }
 
 geometry_msgs::Vector3 toEulerAngle(geometry_msgs::Quaternion quat)
 {
@@ -140,48 +157,79 @@ geometry_msgs::Vector3 toEulerAngle(geometry_msgs::Quaternion quat)
 void Mission::step()
 {
   static int info_counter = 0;
-  geometry_msgs::Vector3 localOffset;
+  static bool finished_x = false;
+  static bool finished_y = false;
+  static bool finished_z = false;
+  static bool finished_yaw = false;
 
-  float speedFactor = 4;
   float yawThresholdInDeg = 2;
 
-  float xCmd, yCmd, zCmd;
-
-  localOffsetFromGpsOffset(localOffset, current_gps, start_gps_location);
-
-  double xOffsetRemaining = target_offset_x - localOffset.x;
-  double yOffsetRemaining = target_offset_y - localOffset.y;
-  double zOffsetRemaining = target_offset_z - localOffset.z;
-
+  float xCmd, yCmd, zCmd, yawCmd;
+  ros::spinOnce();
   double yawDesiredRad = deg2rad * target_yaw;
   double yawThresholdInRad = deg2rad * yawThresholdInDeg;
   double yawInRad = toEulerAngle(current_atti).z;
 
-  info_counter++;
-  if (info_counter > 100)
+  if (std::abs(target_offset_x - current_local_pos.x) < 0.01)
   {
-    info_counter = 0;
-    ROS_INFO("-----x=%f, y=%f, z=%f, yaw=%f ...", localOffset.x, localOffset.y, localOffset.z, yawInRad);
-    ROS_INFO("+++++dx=%f, dy=%f, dz=%f, dyaw=%f ...", xOffsetRemaining, yOffsetRemaining, zOffsetRemaining, yawInRad - yawDesiredRad);
+    finished_x = true;
+    xCmd = 0;
   }
-  if (abs(xOffsetRemaining) >= speedFactor)
-    xCmd = (xOffsetRemaining > 0) ? speedFactor : -1 * speedFactor;
   else
-    xCmd = 0.5 * xOffsetRemaining;
+  {
+    finished_x = false;
+    xCmd = pid_x.PID_realize(current_local_pos.x, target_offset_x);
+  }
 
-  if (abs(yOffsetRemaining) >= speedFactor)
-    yCmd = (yOffsetRemaining > 0) ? speedFactor : -1 * speedFactor;
+  if (std::abs(target_offset_y - current_local_pos.y) < 0.01)
+  {
+    finished_y = true;
+    yCmd = 0;
+  }
   else
-    yCmd = 0.5 * yOffsetRemaining;
+  {
+    finished_y = false;
+    yCmd = pid_y.PID_realize(current_local_pos.y, target_offset_y);
+  }
 
-  zCmd = start_local_position.z + target_offset_z;
+  if (std::abs(target_offset_z - current_local_pos.z) < 0.01)
+  {
+    finished_z = true;
+    zCmd = 0;
+  }
+  else
+  {
+    finished_z = false;
+    zCmd = pid_z.PID_realize(current_local_pos.z, target_offset_z);
+  }
 
-  if (break_counter > 20)
+  if (std::abs(yawInRad - yawDesiredRad) < yawThresholdInRad)
+  {
+    finished_yaw = true;
+    yawCmd = 0;
+  }
+  else
+  {
+    finished_yaw = false;
+    yawCmd = pid_yaw.PID_realize(yawInRad, yawDesiredRad);
+  }
+
+  if (finished_x && finished_y && finished_z && finished_yaw)
   {
     finished = true;
     return;
   }
-  else if (break_counter > 0)
+
+  info_counter++;
+  if (info_counter > 20)
+  {
+    info_counter = 0;
+    ROS_INFO("+-+-+myx=%f, myy=%f, myz=%f,myang=%f", current_local_pos.x, current_local_pos.y, current_local_pos.z, yawInRad);
+    ROS_INFO("=====xCmd=%f, yCmd=%f, zCmd=%f, yawCmd=%f ...", xCmd, yCmd, zCmd, yawDesiredRad);
+    ROS_INFO("%d,%d,%d,%d", finished_x, finished_y, finished_z, finished_yaw);
+  }
+
+  if (finished_x || finished_y || finished_z || finished_yaw)
   {
     sensor_msgs::Joy controlVelYawRate;
     uint8_t flag = (DJISDK::VERTICAL_VELOCITY |
@@ -189,48 +237,21 @@ void Mission::step()
                     DJISDK::YAW_RATE |
                     DJISDK::HORIZONTAL_GROUND |
                     DJISDK::STABLE_ENABLE);
-    controlVelYawRate.axes.push_back(0);
-    controlVelYawRate.axes.push_back(0);
-    controlVelYawRate.axes.push_back(0);
-    controlVelYawRate.axes.push_back(0);
+    controlVelYawRate.axes.push_back(xCmd);
+    controlVelYawRate.axes.push_back(yCmd);
+    controlVelYawRate.axes.push_back(zCmd);
+    controlVelYawRate.axes.push_back(yawCmd);
     controlVelYawRate.axes.push_back(flag);
     ctrlBrakePub.publish(controlVelYawRate);
-    break_counter++;
     return;
   }
-  else //break_counter = 0, not in break stage
-  {
-    sensor_msgs::Joy controlPosYaw;
 
-    controlPosYaw.axes.push_back(xCmd);
-    controlPosYaw.axes.push_back(yCmd);
-    controlPosYaw.axes.push_back(zCmd);
-    controlPosYaw.axes.push_back(yawDesiredRad);
-    //  ROS_INFO("=====xCmd=%f, yCmd=%f, zCmd=%f, yawCmd=%f ...", xCmd,localOffset.y,zCmd,yawInRad);
-    ctrlPosYawPub.publish(controlPosYaw);
-  }
-
-  if (std::abs(xOffsetRemaining) < 0.5 &&
-      std::abs(yOffsetRemaining) < 0.5 &&
-      std::abs(zOffsetRemaining) < 0.5 &&
-      std::abs(yawInRad - yawDesiredRad) < yawThresholdInRad)
-  {
-    //! 1. We are within bounds; start incrementing our in-bound counter
-    inbound_counter++;
-  }
-  else if (inbound_counter != 0)
-    //! 2. Start incrementing an out-of-bounds counter
-    outbound_counter++;
-
-  //! 3. Reset withinBoundsCounter if necessary
-  if (outbound_counter > 10)
-  {
-    ROS_INFO("##### Route %d: out of bounds, reset....", state);
-    inbound_counter = 0;
-    outbound_counter = 0;
-  }
-  if (inbound_counter > 50)
-    break_counter = 1;
+  sensor_msgs::Joy controlPosYaw;
+  controlPosYaw.axes.push_back(xCmd);
+  controlPosYaw.axes.push_back(yCmd);
+  controlPosYaw.axes.push_back(zCmd);
+  controlPosYaw.axes.push_back(yawCmd);
+  ctrlPosYawPub.publish(controlPosYaw);
 }
 
 bool takeoff_land(int task)
@@ -282,13 +303,8 @@ void attitude_callback(const geometry_msgs::QuaternionStamped::ConstPtr &msg)
 void local_position_callback(const geometry_msgs::PointStamped::ConstPtr &msg)
 {
   current_local_pos = msg->point;
-}
-
-void gps_callback(const sensor_msgs::NavSatFix::ConstPtr &msg)
-{
   static ros::Time start_time = ros::Time::now();
   ros::Duration elapsed_time = ros::Time::now() - start_time;
-  current_gps = *msg;
 
   // Down sampled to 50Hz loop
   if (elapsed_time > ros::Duration(0.02))
@@ -307,6 +323,12 @@ void gps_callback(const sensor_msgs::NavSatFix::ConstPtr &msg)
   }
   ros::spinOnce();
 }
+
+void gps_callback(const sensor_msgs::NavSatFix::ConstPtr &msg)
+{
+  current_gps = *msg;
+}
+
 void flight_status_callback(const std_msgs::UInt8::ConstPtr &msg)
 {
   flight_status = msg->data;
@@ -322,9 +344,7 @@ bool M100monitoredTakeoff()
 
   float home_altitude = current_gps.altitude;
   if (!takeoff_land(dji_sdk::DroneTaskControl::Request::TASK_TAKEOFF))
-  {
     return false;
-  }
 
   ros::Duration(0.01).sleep();
   ros::spinOnce();
@@ -348,7 +368,6 @@ bool M100monitoredTakeoff()
     ROS_INFO("Successful takeoff!");
     ros::spinOnce();
   }
-
   return true;
 }
 

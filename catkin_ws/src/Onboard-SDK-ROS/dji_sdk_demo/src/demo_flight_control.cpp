@@ -146,9 +146,9 @@ void Mission::step()
 
   localOffsetFromGpsOffset(localOffset, current_gps, start_gps_location);
 
-  double xOffsetRemaining = target_offset_x - localOffset.x;
-  double yOffsetRemaining = target_offset_y - localOffset.y;
-  double zOffsetRemaining = target_offset_z - localOffset.z;
+  double xOffsetRemaining = target_offset_x - current_local_pos.x;
+  double yOffsetRemaining = target_offset_y - current_local_pos.y;
+  double zOffsetRemaining = target_offset_z - current_local_pos.z;
 
   double yawDesiredRad     = deg2rad * target_yaw;
   double yawThresholdInRad = deg2rad * yawThresholdInDeg;
@@ -159,6 +159,7 @@ void Mission::step()
   {
     info_counter = 0;
     ROS_INFO("-----x=%f, y=%f, z=%f, yaw=%f ...", localOffset.x,localOffset.y, localOffset.z,yawInRad);
+     ROS_INFO("+-+-+myx=%f, myy=%f, myz=%f", current_local_pos.x, current_local_pos.y, current_local_pos.z);
     ROS_INFO("+++++dx=%f, dy=%f, dz=%f, dyaw=%f ...", xOffsetRemaining,yOffsetRemaining, zOffsetRemaining,yawInRad - yawDesiredRad);
   }
   if (abs(xOffsetRemaining) >= speedFactor)
@@ -171,7 +172,7 @@ void Mission::step()
   else
     yCmd = yOffsetRemaining;
 
-  zCmd = start_local_position.z + target_offset_z;
+  zCmd = target_offset_z;
 
 
   /*!
@@ -309,14 +310,22 @@ void gps_callback(const sensor_msgs::NavSatFix::ConstPtr& msg)
   static ros::Time start_time = ros::Time::now();
   ros::Duration elapsed_time = ros::Time::now() - start_time;
   current_gps = *msg;
+                sensor_msgs::Joy controlVelYawRate;
+    uint8_t flag = (DJISDK::VERTICAL_VELOCITY   |
+                DJISDK::HORIZONTAL_VELOCITY |
+                DJISDK::YAW_RATE            |
+                DJISDK::HORIZONTAL_GROUND   |
+                DJISDK::STABLE_ENABLE);
 // ROS_INFO("GPS CONTINUED");
   // Down sampled to 50Hz loop
   if(elapsed_time > ros::Duration(0.02))
   {
     start_time = ros::Time::now();
+    
     switch(square_mission.state)
     {
       case 0:
+
         break;
 
       case 1:
@@ -330,11 +339,20 @@ void gps_callback(const sensor_msgs::NavSatFix::ConstPtr& msg)
           square_mission.start_gps_location = current_gps;
           square_mission.start_local_position = current_local_pos;
           square_mission.setTarget(20, 0, 0, 0);
-          square_mission.state = 2;
+          square_mission.state = 5;
           ROS_INFO("##### Start route %d ....", square_mission.state);
         }
         break;
+      case 5:
 
+    controlVelYawRate.axes.push_back(0);
+    controlVelYawRate.axes.push_back(0);
+    controlVelYawRate.axes.push_back(0);
+    controlVelYawRate.axes.push_back(0);
+    controlVelYawRate.axes.push_back(flag);
+   
+    ctrlBrakePub.publish(controlVelYawRate);
+      break;
       case 2:
         if(!square_mission.finished)
         {
