@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"guidance\"
 
-CXX_INCLUDES = -isystem /opt/ros/kinetic/include/opencv-3.2.0-dev -isystem /opt/ros/kinetic/include/opencv-3.2.0-dev/opencv -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include 
+CXX_INCLUDES = -isystem /opt/ros/kinetic/include/opencv-3.2.0-dev -isystem /opt/ros/kinetic/include/opencv-3.2.0-dev/opencv -I/home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/cv_bridge/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include 
 

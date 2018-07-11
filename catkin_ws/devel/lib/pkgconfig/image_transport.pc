@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/catkin_ws/devel
+
+Name: image_transport
+Description: Description of image_transport
+Version: 1.11.13
+Cflags: -I/home/wsn/HKU_UAV_Project/catkin_ws/src/image_common/image_transport/include
+Libs: -L/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib -limage_transport
+Requires: message_filters pluginlib rosconsole roscpp roslib sensor_msgs

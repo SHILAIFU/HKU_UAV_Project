@@ -20,7 +20,11 @@
 #include <geometry_msgs/TransformStamped.h> //IMU
 #include <geometry_msgs/Vector3Stamped.h> //velocity
 #include <sensor_msgs/LaserScan.h> //obstacle distance & ultrasonic
+#include <sensor_msgs/CameraInfo.h> // camera info message. Contains cam params
 
+
+#include "yaml-cpp/yaml.h" // use to parse YAML calibration file
+#include <fstream> // required to parse YAML 
 ros::Publisher depth_image_pub;
 ros::Publisher left_image_pub;
 ros::Publisher right_image_pub;
@@ -28,6 +32,9 @@ ros::Publisher imu_pub;
 ros::Publisher obstacle_distance_pub;
 ros::Publisher velocity_pub;
 ros::Publisher ultrasonic_pub;
+
+ros::Publisher cam_info_left_pub; // camera info msg publishers
+ros::Publisher cam_info_right_pub;
 
 using namespace cv;
 
@@ -71,13 +78,82 @@ std::ostream& operator<<(std::ostream& out, const e_sdk_err_code value){
 	return out << s;
 }
 
+
+// A nice TODO will be to wrap the driver using the ROS standard cam_info_manager.
+// Hackish code to read cam params from YAML
+// adapted from cam_info_manager and camera_calibration_parser https://github.com/ros-perception/image_common/blob/hydro-devel/camera_calibration_parsers/src/parse_yml.cpp
+
+std::string camera_params_left;
+std::string camera_params_right;
+
+static const char CAM_YML_NAME[]    = "camera_name";
+static const char WIDTH_YML_NAME[]  = "image_width";
+static const char HEIGHT_YML_NAME[] = "image_height";
+static const char K_YML_NAME[]      = "camera_matrix";
+static const char D_YML_NAME[]      = "distortion_coefficients";
+static const char R_YML_NAME[]      = "rectification_matrix";
+static const char P_YML_NAME[]      = "projection_matrix";
+static const char DMODEL_YML_NAME[] = "distortion_model";
+
+// struct to parse camera calibration YAML
+struct SimpleMatrix
+{
+    int rows;
+    int cols;
+    double* data;
+
+    SimpleMatrix(int rows, int cols, double* data)
+        : rows(rows), cols(cols), data(data)
+    {}
+};
+
+void transfer_SimpleMatrix_from_YML_to_ROSmsg(const YAML::Node& node, SimpleMatrix& m)
+{
+    int rows, cols;
+    rows = node["rows"].as<int>();
+    cols = node["cols"].as<int>();
+    const YAML::Node& data = node["data"];
+    for (int i = 0; i < rows*cols; ++i)
+    {
+        m.data[i] = data[i].as<double>();
+    }
+}
+void read_params_from_yaml_and_fill_cam_info_msg(std::string& file_name, sensor_msgs::CameraInfo& cam_info)
+{
+    std::ifstream fin(file_name.c_str());
+    YAML::Node doc = YAML::Load(fin);
+
+    cam_info.width = doc[WIDTH_YML_NAME].as<int>();
+    cam_info.height = doc[HEIGHT_YML_NAME].as<int>();
+
+    SimpleMatrix K_(3, 3, &cam_info.K[0]);
+    transfer_SimpleMatrix_from_YML_to_ROSmsg(doc[K_YML_NAME], K_);
+    SimpleMatrix R_(3, 3, &cam_info.R[0]);
+    transfer_SimpleMatrix_from_YML_to_ROSmsg(doc[R_YML_NAME], R_);
+    SimpleMatrix P_(3, 4, &cam_info.P[0]);
+    transfer_SimpleMatrix_from_YML_to_ROSmsg(doc[P_YML_NAME], P_);
+
+    cam_info.distortion_model = doc[DMODEL_YML_NAME].as<std::string>();
+
+    const YAML::Node& D_node = doc[D_YML_NAME];
+    int D_rows, D_cols;
+    D_rows = D_node["rows"].as<int>();
+    D_cols = D_node["cols"].as<int>();
+    const YAML::Node& D_data = D_node["data"];
+    cam_info.D.resize(D_rows*D_cols);
+    for (int i = 0; i < D_rows*D_cols; ++i)
+    {
+        cam_info.D[i] = D_data[i].as<float>();
+    }
+}
+
 int my_callback(int data_type, int data_len, char *content)
 {
     g_lock.enter();
-
     /* image data */
     if (e_image == data_type && NULL != content)
     {        
+		ros::Time time_in_this_loop = ros::Time::now();
         image_data* data = (image_data*)content;
 
 		if ( data->m_greyscale_image_left[CAMERA_ID] ){
@@ -92,6 +168,17 @@ int my_callback(int data_type, int data_len, char *content)
 			left_8.header.stamp	= ros::Time::now();
 			left_8.encoding		= sensor_msgs::image_encodings::MONO8;
 			left_image_pub.publish(left_8.toImageMsg());
+			sensor_msgs::CameraInfo g_cam_info_left;
+            g_cam_info_left.header.stamp = time_in_this_loop;
+            g_cam_info_left.header.frame_id = "guidance";
+
+            try {
+                read_params_from_yaml_and_fill_cam_info_msg(camera_params_left, g_cam_info_left);
+                cam_info_left_pub.publish(g_cam_info_left);
+            } catch(...) {
+                // if yaml fails to read data, don't try to publish
+            }
+
 		}
 		if ( data->m_greyscale_image_right[CAMERA_ID] ){
 			memcpy(g_greyscale_image_right.data, data->m_greyscale_image_right[CAMERA_ID], IMAGE_SIZE);
@@ -105,6 +192,16 @@ int my_callback(int data_type, int data_len, char *content)
 			right_8.header.stamp	 = ros::Time::now();
 			right_8.encoding  	 = sensor_msgs::image_encodings::MONO8;
 			right_image_pub.publish(right_8.toImageMsg());
+			sensor_msgs::CameraInfo g_cam_info_right;
+            g_cam_info_right.header.stamp = time_in_this_loop;
+            g_cam_info_right.header.frame_id = "guidance";
+
+            try {
+                read_params_from_yaml_and_fill_cam_info_msg(camera_params_right, g_cam_info_right);
+                cam_info_right_pub.publish(g_cam_info_right);
+            } catch(...) {
+                // if yaml fails to read data, don't try to publish
+            }
 		}
 		if ( data->m_depth_image[CAMERA_ID] ){
 			memcpy(g_depth.data, data->m_depth_image[CAMERA_ID], IMAGE_SIZE * 2);
@@ -242,6 +339,12 @@ int main(int argc, char** argv)
     /* initialize ros */
     ros::init(argc, argv, "GuidanceNode");
     ros::NodeHandle my_node;
+	if(!my_node.hasParam("/left_param_file")){
+		ROS_WARN("wtfffffffffffffffffffffffffffffffffff");
+	}
+
+	my_node.getParam("/left_param_file", camera_params_left);
+    my_node.getParam("/right_param_file", camera_params_right);
     depth_image_pub			= my_node.advertise<sensor_msgs::Image>("/guidance/depth_image",1);
     left_image_pub			= my_node.advertise<sensor_msgs::Image>("/guidance/left_image",1);
     right_image_pub			= my_node.advertise<sensor_msgs::Image>("/guidance/right_image",1);
@@ -249,6 +352,8 @@ int main(int argc, char** argv)
     velocity_pub  			= my_node.advertise<geometry_msgs::Vector3Stamped>("/guidance/velocity",1);
     obstacle_distance_pub	= my_node.advertise<sensor_msgs::LaserScan>("/guidance/obstacle_distance",1);
     ultrasonic_pub			= my_node.advertise<sensor_msgs::LaserScan>("/guidance/ultrasonic",1);
+    cam_info_right_pub      = my_node.advertise<sensor_msgs::CameraInfo>("/guidance/right/camera_info",1);
+    cam_info_left_pub       = my_node.advertise<sensor_msgs::CameraInfo>("/guidance/left/camera_info",1);
 
     /* initialize guidance */
     reset_config();

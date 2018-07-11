@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/kinetic/include/opencv-3.2.0-dev"
   "/opt/ros/kinetic/include/opencv-3.2.0-dev/opencv"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/cv_bridge/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include"

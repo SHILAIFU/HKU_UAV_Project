@@ -28,7 +28,7 @@ geometry_msgs/Vector3Stamped.h
 sensor_msgs/LaserScan.h
 -
 
-/opt/ros/kinetic/include/cv_bridge/cv_bridge.h
+/home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h
 -
 sensor_msgs/CompressedImage.h

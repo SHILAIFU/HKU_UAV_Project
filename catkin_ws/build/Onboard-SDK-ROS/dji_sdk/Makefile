@@ -92,7 +92,7 @@ install/local/fast: install/local
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"main\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dji_sdk_generate_messages_py: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule
+
+.PHONY : dji_sdk_generate_messages_py
+
+# fast build rule for target.
+dji_sdk_generate_messages_py/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/build
+.PHONY : dji_sdk_generate_messages_py/fast
+
+# Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/rule
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gennodejs.dir/rule
@@ -211,109 +226,19 @@ dji_sdk_genlisp/fast:
 .PHONY : dji_sdk_genlisp/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule
 
 # Convenience name for target.
-dji_sdk_generate_messages_lisp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule
+_dji_sdk_generate_messages_check_deps_Waypoint: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule
 
-.PHONY : dji_sdk_generate_messages_lisp
+.PHONY : _dji_sdk_generate_messages_check_deps_Waypoint
 
 # fast build rule for target.
-dji_sdk_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/build
-.PHONY : dji_sdk_generate_messages_lisp/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule
-
-# Convenience name for target.
-dji_sdk_geneus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule
-
-.PHONY : dji_sdk_geneus
-
-# fast build rule for target.
-dji_sdk_geneus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/build
-.PHONY : dji_sdk_geneus/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-dji_sdk_generate_messages_eus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule
-
-.PHONY : dji_sdk_generate_messages_eus
-
-# fast build rule for target.
-dji_sdk_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/build
-.PHONY : dji_sdk_generate_messages_eus/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dji_sdk_generate_messages_cpp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule
-
-.PHONY : dji_sdk_generate_messages_cpp
-
-# fast build rule for target.
-dji_sdk_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/build
-.PHONY : dji_sdk_generate_messages_cpp/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionWaypointAction: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointAction
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionWaypointAction/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointAction/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule
-
-# Convenience name for target.
-dji_sdk_generate_messages: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule
-
-.PHONY : dji_sdk_generate_messages
-
-# fast build rule for target.
-dji_sdk_generate_messages/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/build
-.PHONY : dji_sdk_generate_messages/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_Stereo240pSubscription: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_Stereo240pSubscription
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_Stereo240pSubscription/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_Stereo240pSubscription/fast
+_dji_sdk_generate_messages_check_deps_Waypoint/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_Waypoint/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MFIOConfig.dir/rule:
@@ -361,19 +286,139 @@ _dji_sdk_generate_messages_check_deps_DroneArmControl/fast:
 .PHONY : _dji_sdk_generate_messages_check_deps_DroneArmControl/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule
 
 # Convenience name for target.
-_dji_sdk_generate_messages_check_deps_Waypoint: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/rule
+_dji_sdk_generate_messages_check_deps_MissionHpUpload: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule
 
-.PHONY : _dji_sdk_generate_messages_check_deps_Waypoint
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpload
 
 # fast build rule for target.
-_dji_sdk_generate_messages_check_deps_Waypoint/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Waypoint.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_Waypoint/fast
+_dji_sdk_generate_messages_check_deps_MissionHpUpload/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpload/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionStatus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionStatus
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionStatus/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionStatus/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionWaypointAction: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointAction
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionWaypointAction/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointAction.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointAction/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule
+
+# Convenience name for target.
+dji_sdk_generate_messages: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/rule
+
+.PHONY : dji_sdk_generate_messages
+
+# fast build rule for target.
+dji_sdk_generate_messages/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages.dir/build
+.PHONY : dji_sdk_generate_messages/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_Stereo240pSubscription: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_Stereo240pSubscription
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_Stereo240pSubscription/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_Stereo240pSubscription.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_Stereo240pSubscription/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_QueryDroneVersion: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_QueryDroneVersion
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_QueryDroneVersion/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_QueryDroneVersion/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionHpResetYaw: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpResetYaw
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionHpResetYaw/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpResetYaw/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_SetupCameraStream: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_SetupCameraStream
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_SetupCameraStream/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_SetupCameraStream/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetInfo.dir/rule:
@@ -421,229 +466,19 @@ _dji_sdk_generate_messages_check_deps_MissionHpGetInfo/fast:
 .PHONY : _dji_sdk_generate_messages_check_deps_MissionHpGetInfo/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/rule
+dji_sdk_generate_messages_lisp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/rule
 
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate
+.PHONY : dji_sdk_generate_messages_lisp
 
 # fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionWpGetSpeed
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionWpGetSpeed/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionStatus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionStatus
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionStatus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionStatus.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionStatus/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionHpUpload: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpload
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionHpUpload/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpUpload.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpUpload/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_SetupCameraStream: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_SetupCameraStream
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_SetupCameraStream/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetupCameraStream.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_SetupCameraStream/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionHpResetYaw: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpResetYaw
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionHpResetYaw/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHpResetYaw.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHpResetYaw/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dji_sdk_generate_messages_py: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/rule
-
-.PHONY : dji_sdk_generate_messages_py
-
-# fast build rule for target.
-dji_sdk_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_py.dir/build
-.PHONY : dji_sdk_generate_messages_py/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_cpp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionWaypointTask: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointTask
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionWaypointTask/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointTask/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule
-
-# Convenience name for target.
-dji_sdk_node: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule
-
-.PHONY : dji_sdk_node
-
-# fast build rule for target.
-dji_sdk_node/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/build
-.PHONY : dji_sdk_node/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_MissionHotpointTask: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHotpointTask
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_MissionHotpointTask/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_MissionHotpointTask/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_QueryDroneVersion: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_QueryDroneVersion
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_QueryDroneVersion/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_QueryDroneVersion.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_QueryDroneVersion/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_py: Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_nodejs: Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : nav_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
+dji_sdk_generate_messages_lisp/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_lisp.dir/build
+.PHONY : dji_sdk_generate_messages_lisp/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
@@ -676,6 +511,36 @@ _dji_sdk_generate_messages_check_deps_SDKControlAuthority/fast:
 .PHONY : _dji_sdk_generate_messages_check_deps_SDKControlAuthority/fast
 
 # Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_lisp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_nodejs: Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
@@ -689,51 +554,6 @@ nav_msgs_generate_messages_cpp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_gene
 nav_msgs_generate_messages_cpp/fast:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule
-
-# Convenience name for target.
-dji_sdk_genpy: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule
-
-.PHONY : dji_sdk_genpy
-
-# fast build rule for target.
-dji_sdk_genpy/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/build
-.PHONY : dji_sdk_genpy/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_SetHardSync: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_SetHardSync
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_SetHardSync/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_SetHardSync/fast
-
-# Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule
-
-# Convenience name for target.
-_dji_sdk_generate_messages_check_deps_CameraAction: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule
-
-.PHONY : _dji_sdk_generate_messages_check_deps_CameraAction
-
-# fast build rule for target.
-_dji_sdk_generate_messages_check_deps_CameraAction/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/build
-.PHONY : _dji_sdk_generate_messages_check_deps_CameraAction/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
@@ -764,6 +584,21 @@ _dji_sdk_generate_messages_check_deps_WaypointList: Onboard-SDK-ROS/dji_sdk/CMak
 _dji_sdk_generate_messages_check_deps_WaypointList/fast:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_WaypointList.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_WaypointList.dir/build
 .PHONY : _dji_sdk_generate_messages_check_deps_WaypointList/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionWpGetSpeed
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpGetSpeed.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionWpGetSpeed/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetLocalPosRef.dir/rule:
@@ -811,21 +646,6 @@ _dji_sdk_generate_messages_check_deps_MissionWpAction/fast:
 .PHONY : _dji_sdk_generate_messages_check_deps_MissionWpAction/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_eus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/rule
 .PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_DroneTaskControl.dir/rule
@@ -871,34 +691,94 @@ _dji_sdk_generate_messages_check_deps_SendMobileData/fast:
 .PHONY : _dji_sdk_generate_messages_check_deps_SendMobileData/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_lisp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+dji_sdk_genpy: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/rule
 
-.PHONY : actionlib_msgs_generate_messages_lisp
+.PHONY : dji_sdk_genpy
 
 # fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
+dji_sdk_genpy/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_genpy.dir/build
+.PHONY : dji_sdk_genpy/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule
 
 # Convenience name for target.
-actionlib_msgs_generate_messages_nodejs: Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+_dji_sdk_generate_messages_check_deps_SetHardSync: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/rule
 
-.PHONY : actionlib_msgs_generate_messages_nodejs
+.PHONY : _dji_sdk_generate_messages_check_deps_SetHardSync
 
 # fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+_dji_sdk_generate_messages_check_deps_SetHardSync/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_SetHardSync.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_SetHardSync/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_CameraAction: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_CameraAction
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_CameraAction/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_CameraAction.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_CameraAction/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionWaypointTask: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointTask
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionWaypointTask/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWaypointTask.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionWaypointTask/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule
+
+# Convenience name for target.
+dji_sdk_node: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/rule
+
+.PHONY : dji_sdk_node
+
+# fast build rule for target.
+dji_sdk_node/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/build
+.PHONY : dji_sdk_node/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule
+
+# Convenience name for target.
+_dji_sdk_generate_messages_check_deps_MissionHotpointTask: Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/rule
+
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHotpointTask
+
+# fast build rule for target.
+_dji_sdk_generate_messages_check_deps_MissionHotpointTask/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionHotpointTask.dir/build
+.PHONY : _dji_sdk_generate_messages_check_deps_MissionHotpointTask/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_MissionWpUpload.dir/rule:
@@ -991,19 +871,19 @@ _dji_sdk_generate_messages_check_deps_MFIOSetValue/fast:
 .PHONY : _dji_sdk_generate_messages_check_deps_MFIOSetValue/fast
 
 # Convenience name for target.
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule
-.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-dji_sdk_gencpp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule
+dji_sdk_generate_messages_cpp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/rule
 
-.PHONY : dji_sdk_gencpp
+.PHONY : dji_sdk_generate_messages_cpp
 
 # fast build rule for target.
-dji_sdk_gencpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/build
-.PHONY : dji_sdk_gencpp/fast
+dji_sdk_generate_messages_cpp/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_cpp.dir/build
+.PHONY : dji_sdk_generate_messages_cpp/fast
 
 # Convenience name for target.
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_StereoVGASubscription.dir/rule:
@@ -1019,6 +899,51 @@ _dji_sdk_generate_messages_check_deps_StereoVGASubscription: Onboard-SDK-ROS/dji
 _dji_sdk_generate_messages_check_deps_StereoVGASubscription/fast:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_StereoVGASubscription.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/_dji_sdk_generate_messages_check_deps_StereoVGASubscription.dir/build
 .PHONY : _dji_sdk_generate_messages_check_deps_StereoVGASubscription/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule
+
+# Convenience name for target.
+dji_sdk_gencpp: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/rule
+
+.PHONY : dji_sdk_gencpp
+
+# fast build rule for target.
+dji_sdk_gencpp/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_gencpp.dir/build
+.PHONY : dji_sdk_gencpp/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dji_sdk_generate_messages_eus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/rule
+
+.PHONY : dji_sdk_generate_messages_eus
+
+# fast build rule for target.
+dji_sdk_generate_messages_eus/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_generate_messages_eus.dir/build
+.PHONY : dji_sdk_generate_messages_eus/fast
+
+# Convenience name for target.
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule
+.PHONY : Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule
+
+# Convenience name for target.
+dji_sdk_geneus: Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/rule
+
+.PHONY : dji_sdk_geneus
+
+# fast build rule for target.
+dji_sdk_geneus/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/build.make Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_geneus.dir/build
+.PHONY : dji_sdk_geneus/fast
 
 src/main.o: src/main.cpp.o
 
@@ -1245,58 +1170,50 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... install"
 	@echo "... install/local"
+	@echo "... dji_sdk_generate_messages_py"
 	@echo "... dji_sdk_gennodejs"
 	@echo "... list_install_components"
 	@echo "... dji_sdk_generate_messages_nodejs"
 	@echo "... dji_sdk_genlisp"
-	@echo "... dji_sdk_generate_messages_lisp"
-	@echo "... dji_sdk_geneus"
-	@echo "... dji_sdk_generate_messages_eus"
-	@echo "... dji_sdk_generate_messages_cpp"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionWaypointAction"
-	@echo "... dji_sdk_generate_messages"
-	@echo "... _dji_sdk_generate_messages_check_deps_Stereo240pSubscription"
+	@echo "... _dji_sdk_generate_messages_check_deps_Waypoint"
 	@echo "... _dji_sdk_generate_messages_check_deps_MFIOConfig"
 	@echo "... _dji_sdk_generate_messages_check_deps_StereoDepthSubscription"
 	@echo "... _dji_sdk_generate_messages_check_deps_DroneArmControl"
-	@echo "... _dji_sdk_generate_messages_check_deps_Waypoint"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpUpload"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionStatus"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionWaypointAction"
+	@echo "... dji_sdk_generate_messages"
+	@echo "... _dji_sdk_generate_messages_check_deps_Stereo240pSubscription"
+	@echo "... _dji_sdk_generate_messages_check_deps_QueryDroneVersion"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpResetYaw"
+	@echo "... _dji_sdk_generate_messages_check_deps_SetupCameraStream"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionWpGetInfo"
 	@echo "... _dji_sdk_generate_messages_check_deps_Gimbal"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpGetInfo"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpUpdateYawRate"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionWpGetSpeed"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionStatus"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpUpload"
-	@echo "... _dji_sdk_generate_messages_check_deps_SetupCameraStream"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpResetYaw"
-	@echo "... dji_sdk_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionWaypointTask"
-	@echo "... dji_sdk_node"
-	@echo "... _dji_sdk_generate_messages_check_deps_MissionHotpointTask"
-	@echo "... _dji_sdk_generate_messages_check_deps_QueryDroneVersion"
-	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... dji_sdk_generate_messages_lisp"
+	@echo "... nav_msgs_generate_messages_eus"
+	@echo "... _dji_sdk_generate_messages_check_deps_SDKControlAuthority"
 	@echo "... edit_cache"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... _dji_sdk_generate_messages_check_deps_SDKControlAuthority"
 	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... dji_sdk_genpy"
-	@echo "... _dji_sdk_generate_messages_check_deps_SetHardSync"
-	@echo "... _dji_sdk_generate_messages_check_deps_CameraAction"
 	@echo "... nav_msgs_generate_messages_py"
 	@echo "... _dji_sdk_generate_messages_check_deps_WaypointList"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionWpGetSpeed"
 	@echo "... _dji_sdk_generate_messages_check_deps_SetLocalPosRef"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpUpdateRadius"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionWpAction"
-	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... _dji_sdk_generate_messages_check_deps_DroneTaskControl"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionHpAction"
 	@echo "... _dji_sdk_generate_messages_check_deps_SendMobileData"
+	@echo "... dji_sdk_genpy"
+	@echo "... _dji_sdk_generate_messages_check_deps_SetHardSync"
+	@echo "... _dji_sdk_generate_messages_check_deps_CameraAction"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionWaypointTask"
+	@echo "... dji_sdk_node"
+	@echo "... _dji_sdk_generate_messages_check_deps_MissionHotpointTask"
 	@echo "... test"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionWpUpload"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionWaypoint"
 	@echo "... install/strip"
@@ -1304,8 +1221,11 @@ help:
 	@echo "... _dji_sdk_generate_messages_check_deps_MobileData"
 	@echo "... _dji_sdk_generate_messages_check_deps_MissionWpSetSpeed"
 	@echo "... _dji_sdk_generate_messages_check_deps_MFIOSetValue"
-	@echo "... dji_sdk_gencpp"
+	@echo "... dji_sdk_generate_messages_cpp"
 	@echo "... _dji_sdk_generate_messages_check_deps_StereoVGASubscription"
+	@echo "... dji_sdk_gencpp"
+	@echo "... dji_sdk_generate_messages_eus"
+	@echo "... dji_sdk_geneus"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

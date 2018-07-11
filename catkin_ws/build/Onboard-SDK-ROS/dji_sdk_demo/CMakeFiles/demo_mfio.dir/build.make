@@ -90,7 +90,7 @@ demo_mfio_EXTERNAL_OBJECTS =
 
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mfio.dir/src/demo_mfio.cpp.o
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mfio.dir/build.make
-/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: /opt/ros/kinetic/lib/libimage_transport.so
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/libimage_transport.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: /opt/ros/kinetic/lib/libmessage_filters.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: /opt/ros/kinetic/lib/libclass_loader.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mfio: /usr/lib/libPocoFoundation.so

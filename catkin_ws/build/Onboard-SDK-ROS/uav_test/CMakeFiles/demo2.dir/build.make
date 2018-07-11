@@ -90,7 +90,7 @@ demo2_EXTERNAL_OBJECTS =
 
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/src/demo_mission.cpp.o
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: Onboard-SDK-ROS/uav_test/CMakeFiles/demo2.dir/build.make
-/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: /opt/ros/kinetic/lib/libimage_transport.so
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/libimage_transport.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: /opt/ros/kinetic/lib/libmessage_filters.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: /opt/ros/kinetic/lib/libclass_loader.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/uav_test/demo2: /usr/lib/libPocoFoundation.so

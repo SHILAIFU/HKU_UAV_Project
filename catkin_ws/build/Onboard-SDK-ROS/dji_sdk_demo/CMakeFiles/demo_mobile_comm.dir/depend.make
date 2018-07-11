@@ -42,6 +42,9 @@ Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_com
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SendMobileData.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SendMobileDataRequest.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SendMobileDataResponse.h
+Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include/dji_sdk_demo/demo_mobile_comm.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/src/demo_mobile_comm.cpp
@@ -135,9 +138,6 @@ Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_com
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h

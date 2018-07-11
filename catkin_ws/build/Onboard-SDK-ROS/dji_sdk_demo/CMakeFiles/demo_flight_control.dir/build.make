@@ -90,7 +90,7 @@ demo_flight_control_EXTERNAL_OBJECTS =
 
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/build.make
-/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: /opt/ros/kinetic/lib/libimage_transport.so
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/libimage_transport.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: /opt/ros/kinetic/lib/libmessage_filters.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: /opt/ros/kinetic/lib/libclass_loader.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_flight_control: /usr/lib/libPocoFoundation.so

@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/catkin_ws/devel
+
+Name: depth_image_proc
+Description: Description of depth_image_proc
+Version: 1.12.23
+Cflags: -I/home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/image_pipeline/depth_image_proc/include
+Libs: -L/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib -ldepth_image_proc
+Requires: 

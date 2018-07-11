@@ -88,6 +88,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HK
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/main.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -187,9 +190,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kin
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/main.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -282,6 +282,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -381,9 +384,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -476,6 +476,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_con
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_control.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -575,9 +578,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_con
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_control.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -670,6 +670,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mis
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_mission_services.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -769,9 +772,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mis
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mission_services.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -864,6 +864,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mob
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_mobile_comm.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -963,9 +966,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mob
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_mobile_comm.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -1058,6 +1058,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_pub
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_publisher.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -1157,9 +1160,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_pub
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_publisher.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -1252,6 +1252,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_ser
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_services.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -1351,9 +1354,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_ser
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_services.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
@@ -1446,6 +1446,9 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_sub
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscription.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionRequest.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/StereoVGASubscriptionResponse.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk_node.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/src/modules/dji_sdk_node_subscriber.cpp
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
@@ -1545,9 +1548,6 @@ Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_sub
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk/CMakeFiles/dji_sdk_node.dir/src/modules/dji_sdk_node_subscriber.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h

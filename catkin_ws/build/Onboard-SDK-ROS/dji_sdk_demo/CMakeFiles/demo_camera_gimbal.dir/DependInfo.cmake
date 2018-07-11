@@ -21,12 +21,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include"
   "/home/wsn/HKU_UAV_Project/catkin_ws/devel/include"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/image_common/image_transport/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/wsn/HKU_UAV_Project/catkin_ws/build/image_common/image_transport/CMakeFiles/image_transport.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

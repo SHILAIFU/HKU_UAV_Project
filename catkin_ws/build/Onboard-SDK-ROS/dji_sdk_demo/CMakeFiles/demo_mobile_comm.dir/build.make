@@ -90,7 +90,7 @@ demo_mobile_comm_EXTERNAL_OBJECTS =
 
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/src/demo_mobile_comm.cpp.o
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_mobile_comm.dir/build.make
-/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: /opt/ros/kinetic/lib/libimage_transport.so
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/libimage_transport.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: /opt/ros/kinetic/lib/libmessage_filters.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: /opt/ros/kinetic/lib/libclass_loader.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/dji_sdk_demo/demo_mobile_comm: /usr/lib/libPocoFoundation.so

@@ -56,6 +56,27 @@ CMAKE_BINARY_DIR = /home/wsn/HKU_UAV_Project/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"main\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -79,28 +100,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -123,15 +122,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : list_install_components/fast
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,156 +181,6 @@ guidanceNodeTest/fast:
 .PHONY : guidanceNodeTest/fast
 
 # Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_py.dir/build.make Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/rule
 .PHONY : Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/rule
@@ -346,171 +196,6 @@ guidanceNode/fast:
 .PHONY : guidanceNode/fast
 
 # Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_eus.dir/build.make Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_py.dir/build.make Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make Guidance-SDK-ROS/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make Guidance-SDK-ROS/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make Guidance-SDK-ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/rule
 .PHONY : Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/rule
@@ -524,66 +209,6 @@ guidanceNodeCalibration: Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir
 guidanceNodeCalibration/fast:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/build.make Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/build
 .PHONY : guidanceNodeCalibration/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make Guidance-SDK-ROS/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make Guidance-SDK-ROS/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
 
 src/DJI_utility.o: src/DJI_utility.cpp.o
 
@@ -702,41 +327,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
 	@echo "... test"
 	@echo "... install"
-	@echo "... install/local"
-	@echo "... rebuild_cache"
 	@echo "... guidanceNodeTest"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... install/strip"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... guidanceNode"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... list_install_components"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... guidanceNodeCalibration"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... install/local"
 	@echo "... src/DJI_utility.o"
 	@echo "... src/DJI_utility.i"
 	@echo "... src/DJI_utility.s"

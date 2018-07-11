@@ -3,7 +3,7 @@
 
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeTest.dir/src/GuidanceNodeTest.cpp.o
  /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/src/GuidanceNodeTest.cpp
- /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
+ /home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
  /opt/ros/kinetic/include/geometry_msgs/Transform.h
  /opt/ros/kinetic/include/geometry_msgs/TransformStamped.h

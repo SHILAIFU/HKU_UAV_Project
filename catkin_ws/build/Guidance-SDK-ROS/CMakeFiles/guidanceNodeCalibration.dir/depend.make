@@ -7,7 +7,7 @@ Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/DJI_utility.cpp.o: /
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include/DJI_guidance.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include/DJI_utility.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/src/GuidanceNodeCalibration.cpp
-Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
+Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Transform.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNodeCalibration.dir/src/GuidanceNodeCalibration.cpp.o: /opt/ros/kinetic/include/geometry_msgs/TransformStamped.h

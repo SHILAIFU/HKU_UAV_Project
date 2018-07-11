@@ -13,6 +13,9 @@ Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRef.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRefRequest.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/dji_sdk/SetLocalPosRefResponse.h
+Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraph.h
+Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphRequest.h
+Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/devel/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk/include/dji_sdk/dji_sdk.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include/dji_sdk_demo/Config.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/dji_sdk_demo/include/dji_sdk_demo/demo_flight_control.h
@@ -107,9 +110,6 @@ Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2/impl/convert.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2/transform_datatypes.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2/transform_storage.h
-Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
-Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
-Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/tf2_ros/buffer_interface.h
 Onboard-SDK-ROS/dji_sdk_demo/CMakeFiles/demo_flight_control.dir/src/demo_flight_control.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h

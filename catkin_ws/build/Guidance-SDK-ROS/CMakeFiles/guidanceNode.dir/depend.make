@@ -7,7 +7,7 @@ Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/DJI_utility.cpp.o: /home/wsn/HK
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include/DJI_guidance.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/include/DJI_utility.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/Guidance-SDK-ROS/src/GuidanceNode.cpp
-Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
+Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/cv_bridge/include/cv_bridge/cv_bridge.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Transform.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/geometry_msgs/TransformStamped.h
@@ -196,9 +196,11 @@ Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/ki
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CameraInfo.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CompressedImage.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/sensor_msgs/Image.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/sensor_msgs/LaserScan.h
+Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/sensor_msgs/image_encodings.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 Guidance-SDK-ROS/CMakeFiles/guidanceNode.dir/src/GuidanceNode.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
