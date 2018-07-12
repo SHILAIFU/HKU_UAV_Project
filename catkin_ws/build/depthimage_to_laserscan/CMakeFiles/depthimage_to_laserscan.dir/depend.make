@@ -16,6 +16,7 @@ depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/image_common/image_transport/include/image_transport/transport_hints.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/image_geometry/include/image_geometry/pinhole_camera_model.h
+depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/Config.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/dynamic_reconfigure/ConfigDescription.h
@@ -216,6 +217,7 @@ depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CameraInfo.h
+depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/sensor_msgs/CompressedImage.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/sensor_msgs/Image.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/sensor_msgs/LaserScan.h
 depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to_laserscan.cpp.o: /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h

@@ -23,7 +23,7 @@ sensor_msgs::NavSatFix current_gps;
 geometry_msgs::Quaternion current_atti;
 geometry_msgs::Point current_local_pos;
 
-sensor_msgs::NavSatFix zero_gps_location;
+// sensor_msgs::NavSatFix zero_gps_location;
 
 Mission mymission;
 

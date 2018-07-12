@@ -17,6 +17,7 @@ depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to
  /home/wsn/HKU_UAV_Project/catkin_ws/src/image_common/image_transport/include/image_transport/subscriber.h
  /home/wsn/HKU_UAV_Project/catkin_ws/src/image_common/image_transport/include/image_transport/transport_hints.h
  /home/wsn/HKU_UAV_Project/catkin_ws/src/vision_opencv/image_geometry/include/image_geometry/pinhole_camera_model.h
+ /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
  /opt/ros/kinetic/include/dynamic_reconfigure/BoolParameter.h
  /opt/ros/kinetic/include/dynamic_reconfigure/Config.h
  /opt/ros/kinetic/include/dynamic_reconfigure/ConfigDescription.h
@@ -217,6 +218,7 @@ depthimage_to_laserscan/CMakeFiles/depthimage_to_laserscan.dir/src/depthimage_to
  /opt/ros/kinetic/include/ros/wall_timer_options.h
  /opt/ros/kinetic/include/rosconsole/macros_generated.h
  /opt/ros/kinetic/include/sensor_msgs/CameraInfo.h
+ /opt/ros/kinetic/include/sensor_msgs/CompressedImage.h
  /opt/ros/kinetic/include/sensor_msgs/Image.h
  /opt/ros/kinetic/include/sensor_msgs/LaserScan.h
  /opt/ros/kinetic/include/sensor_msgs/RegionOfInterest.h
