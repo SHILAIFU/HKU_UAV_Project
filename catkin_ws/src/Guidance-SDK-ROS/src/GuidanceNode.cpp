@@ -224,21 +224,41 @@ int my_callback(int data_type, int data_len, char *content)
 			{
 				imshow("depth", depth8);
 			}
-			cv_bridge::CvImagePtr cv_ptr;
 
-			//publish depth image
 			cv_bridge::CvImage depth_16;
-			Mat depth16(HEIGHT, WIDTH, CV_16UC1);
-
-			depth8.convertTo(depth16, CV_16UC1);
-			g_depth.copyTo(depth_16.image);			
-			// depth16.copyTo(depth_16.image);
+			g_depth.copyTo(depth_16.image);
 			depth_16.header.frame_id = "guidance";
 			depth_16.header.stamp = ros::Time::now();
-			depth_16.encoding = sensor_msgs::image_encodings::TYPE_16UC1;
+			depth_16.encoding = sensor_msgs::image_encodings::MONO16;
 			depth_image_pub.publish(depth_16.toImageMsg());
-		}
 
+			sensor_msgs::CameraInfo g_cam_info_right;
+			g_cam_info_right.header.stamp = time_in_this_loop;
+			g_cam_info_right.header.frame_id = "guidance";
+
+			try
+			{
+				read_params_from_yaml_and_fill_cam_info_msg(camera_params_right, g_cam_info_right);
+				cam_info_right_pub.publish(g_cam_info_right);
+			}
+			catch (...)
+			{
+				// if yaml fails to read data, don't try to publish
+			}
+			sensor_msgs::CameraInfo g_cam_info_left;
+			g_cam_info_left.header.stamp = time_in_this_loop;
+			g_cam_info_left.header.frame_id = "guidance";
+
+			try
+			{
+				read_params_from_yaml_and_fill_cam_info_msg(camera_params_left, g_cam_info_left);
+				cam_info_left_pub.publish(g_cam_info_left);
+			}
+			catch (...)
+			{
+				// if yaml fails to read data, don't try to publish
+			}
+		}
 		key = waitKey(1);
 	}
 

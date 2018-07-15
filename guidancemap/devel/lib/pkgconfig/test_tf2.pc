@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/devel
+
+Name: test_tf2
+Description: Description of test_tf2
+Version: 0.6.3
+Cflags: 
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/devel/lib 
+Requires: 

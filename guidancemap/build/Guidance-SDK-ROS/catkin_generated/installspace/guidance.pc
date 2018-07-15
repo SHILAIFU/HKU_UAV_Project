@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/install
+
+Name: guidance
+Description: Description of guidance
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/install/lib 
+Requires: 

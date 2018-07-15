@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/catkin_ws/install
+
+Name: openni_launch
+Description: Description of openni_launch
+Version: 1.11.0
+Cflags: 
+Libs: -L/home/wsn/HKU_UAV_Project/catkin_ws/install/lib 
+Requires: 

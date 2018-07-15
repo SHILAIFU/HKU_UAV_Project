@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/devel
+
+Name: tf2_eigen
+Description: Description of tf2_eigen
+Version: 0.6.3
+Cflags: -I/home/wsn/HKU_UAV_Project/guidancemap/src/geometry2/tf2_eigen/include -I/usr/include/eigen3
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/devel/lib 
+Requires: 

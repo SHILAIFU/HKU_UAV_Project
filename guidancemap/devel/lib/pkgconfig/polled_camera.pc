@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/devel
+
+Name: polled_camera
+Description: Description of polled_camera
+Version: 1.11.13
+Cflags: -I/home/wsn/HKU_UAV_Project/guidancemap/devel/include -I/home/wsn/HKU_UAV_Project/guidancemap/src/image_common/polled_camera/include
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/devel/lib -lpolled_camera
+Requires: image_transport message_runtime roscpp sensor_msgs std_msgs

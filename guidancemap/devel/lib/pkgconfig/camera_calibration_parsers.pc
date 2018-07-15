@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/devel
+
+Name: camera_calibration_parsers
+Description: Description of camera_calibration_parsers
+Version: 1.11.13
+Cflags: -I/home/wsn/HKU_UAV_Project/guidancemap/src/image_common/camera_calibration_parsers/include
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/devel/lib -lcamera_calibration_parsers
+Requires: sensor_msgs

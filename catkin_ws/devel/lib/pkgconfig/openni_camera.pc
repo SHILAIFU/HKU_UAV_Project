@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/catkin_ws/devel
+
+Name: openni_camera
+Description: Description of openni_camera
+Version: 1.11.0
+Cflags: -I/home/wsn/HKU_UAV_Project/catkin_ws/devel/include -I/home/wsn/HKU_UAV_Project/catkin_ws/src/openni_camera/openni_camera/include -I/usr/include -I/usr/include/ni
+Libs: -L/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib -lopenni_nodelet -lopenni_driver -l:/usr/lib/i386-linux-gnu/libboost_system.so -l:/usr/lib/i386-linux-gnu/libboost_filesystem.so -l:/usr/lib/i386-linux-gnu/libboost_thread.so -l:/usr/lib/i386-linux-gnu/libboost_chrono.so -l:/usr/lib/i386-linux-gnu/libboost_date_time.so -l:/usr/lib/i386-linux-gnu/libboost_atomic.so -l:/usr/lib/i386-linux-gnu/libpthread.so -lOpenNI
+Requires: camera_info_manager dynamic_reconfigure image_transport nodelet roscpp

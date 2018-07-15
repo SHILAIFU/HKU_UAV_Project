@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: /home/wsn/HKU_UAV_Project/guidancemap/src
+# Build directory: /home/wsn/HKU_UAV_Project/guidancemap/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs(gtest)
+subdirs(geometry2/geometry2)
+subdirs(image_common/image_common)
+subdirs(octomap_mapping/octomap_mapping)
+subdirs(perception_pcl/perception_pcl)
+subdirs(octomap_msgs)
+subdirs(pcl_msgs)
+subdirs(geometry2/tf2_msgs)
+subdirs(geometry2/tf2)
+subdirs(geometry2/tf2_bullet)
+subdirs(geometry2/tf2_eigen)
+subdirs(image_common/camera_calibration_parsers)
+subdirs(Guidance-SDK-ROS)
+subdirs(perception_pcl/pcl_conversions)
+subdirs(image_common/image_transport)
+subdirs(image_common/camera_info_manager)
+subdirs(openni_camera/openni_description)
+subdirs(openni_camera/openni_launch)
+subdirs(image_common/polled_camera)
+subdirs(geometry2/tf2_py)
+subdirs(openni_camera/openni_camera)
+subdirs(geometry2/tf2_ros)
+subdirs(octomap_ros)
+subdirs(perception_pcl/pcl_ros)
+subdirs(octomap_mapping/octomap_server)
+subdirs(geometry2/tf2_geometry_msgs)
+subdirs(geometry2/tf2_kdl)
+subdirs(geometry2/test_tf2)
+subdirs(geometry2/tf2_sensor_msgs)
+subdirs(geometry2/tf2_tools)

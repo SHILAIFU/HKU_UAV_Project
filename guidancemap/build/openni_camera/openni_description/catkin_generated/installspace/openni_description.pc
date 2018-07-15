@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/install
+
+Name: openni_description
+Description: Description of openni_description
+Version: 1.11.0
+Cflags: 
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/install/lib 
+Requires: 

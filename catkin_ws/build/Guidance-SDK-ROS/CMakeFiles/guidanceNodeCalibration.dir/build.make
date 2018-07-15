@@ -121,7 +121,7 @@ guidanceNodeCalibration_EXTERNAL_OBJECTS =
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /usr/lib/i386-linux-gnu/libboost_signals.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /usr/lib/i386-linux-gnu/libboost_filesystem.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/libcv_bridge.so
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /opt/ros/kinetic/lib/libopencv_core3.so.3.2.0
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.2.0
 /home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/guidance/guidanceNodeCalibration: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3.2.0
