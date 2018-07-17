@@ -68,15 +68,15 @@ void depth_image_callback(const sensor_msgs::ImageConstPtr& depth_img)
 {
     cv_bridge::CvImagePtr cv_ptr;
     try {
-        cv_ptr = cv_bridge::toCvCopy(depth_img, sensor_msgs::image_encodings::TYPE_16UC1);
+        cv_ptr = cv_bridge::toCvCopy(depth_img, sensor_msgs::image_encodings::MONO16);
     }
     catch (cv_bridge::Exception& e) {
         ROS_ERROR("cv_bridge exception: %s", e.what());
         return;
     }
 
-    cv::Mat depth8(HEIGHT, WIDTH, CV_16UC1);
-    cv_ptr->image.convertTo(depth8, CV_16UC1);
+    cv::Mat depth8(HEIGHT, WIDTH, CV_8UC1);
+    cv_ptr->image.convertTo(depth8, CV_8UC1);
     cv::imshow("depth_image", depth8);
     cv::waitKey(1);
 }

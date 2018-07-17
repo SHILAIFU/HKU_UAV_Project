@@ -1,1 +1,0 @@
-[0m[ INFO] [1531660252.690590388]: Opening /home/wsn/catkin_ws/sdata/2017-11-13-16-18-17.bag[0m

@@ -1,0 +1,8 @@
+prefix=/home/wsn/HKU_UAV_Project/guidancemap/install
+
+Name: image_view
+Description: Description of image_view
+Version: 1.12.23
+Cflags: -I/home/wsn/HKU_UAV_Project/guidancemap/install/include
+Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/install/lib 
+Requires: dynamic_reconfigure

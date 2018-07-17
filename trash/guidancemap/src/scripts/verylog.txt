@@ -1,0 +1,1 @@
+[0m[ INFO] [1531722926.391043974]: Opening /home/wsn/HKU_UAV_Project/guidancemap/sdata/2017-11-13-16-18-17.bag[0m

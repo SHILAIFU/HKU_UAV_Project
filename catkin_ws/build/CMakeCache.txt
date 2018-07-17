@@ -2109,5 +2109,5 @@ bullet_bullet_INCLUDEDIR:INTERNAL=
 bullet_bullet_LIBDIR:INTERNAL=
 bullet_bullet_PREFIX:INTERNAL=
 bullet_bullet_VERSION:INTERNAL=
-prefix_result:INTERNAL=
+prefix_result:INTERNAL=/usr/lib/i386-linux-gnu
 
