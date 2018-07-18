@@ -57,4 +57,7 @@ add_executable(guidanceNodeCalibration
   src/GuidanceNodeCalibration.cpp
   src/DJI_utility.cpp)
 
+add_executable(pcl src/pcl.cpp)
+target_link_libraries(pcl ${catkin_LIBRARIES})
+
 #  vim: set et fenc=utf-8 ff=unix sts=0 sw=2 ts=2 :
