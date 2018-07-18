@@ -16,7 +16,7 @@
 
 <!-- Here we generate the camera offsets for more accuracy, you have to do this for each camera set -->
 <!-- You could save a little overhead by directly transforming from camera to base_link and skip the above transforms -->
-<!-- <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_down_left" args="-0.075 0 0 0 0 0 guidance_down guidance_down_left"/>
+<node pkg="tf2_ros" type="static_transform_publisher" name="guidance_down_left" args="-0.075 0 0 0 0 0 guidance_down guidance_down_left"/>
 <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_down_right" args="0.075 0 0 0 0 0 guidance_down guidance_down_right" />
 
 <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_front_left" args="-0.075 0 0 0 0 0 guidance_front guidance_front_left"/>
@@ -29,6 +29,6 @@
 <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_back_right" args="0.075 0 0 0 0 0 guidance_back guidance_back_right" />
 
 <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_left_left" args="-0.075 0 0 0 0 0 guidance_left guidance_left_left"/>
-<node pkg="tf2_ros" type="static_transform_publisher" name="guidance_left_right" args="0.075 0 0 0 0 0 guidance_left guidance_left_right" /> -->
+<node pkg="tf2_ros" type="static_transform_publisher" name="guidance_left_right" args="0.075 0 0 0 0 0 guidance_left guidance_left_right" />
 
 </launch>

@@ -58,7 +58,7 @@ Mat depth8(HEIGHT, WIDTH, CV_8UC1);
 Mat g_disparity;
 
 int err_code;
-int change_flag=0;
+int change_flag = 0;
 
 std::ostream &operator<<(std::ostream &out, const e_sdk_err_code value)
 {
@@ -233,13 +233,22 @@ int my_callback(int data_type, int data_len, char *content)
             //publish depth image
 
             g_depth.convertTo(depth8, CV_8UC1);
-            imshow("depth", depth8);
+            // imshow("depth", depth8);
 
             g_depth *= 7.8125;
 
+            Mat result;
+            // blur(g_depth, result, Size(3, 3));            
+
+            medianBlur(g_depth, result, 3);
+            // GaussianBlur(g_depth, result, Size(3, 3), 0, 0);
+
+            imshow("depth", result);
+
             cv_bridge::CvImage depth_16;
-            g_depth.copyTo(depth_16.image);
-            depth_16.header.frame_id = "guidance_" + direction[CAMERA_ID];
+            // g_depth.copyTo(depth_16.image);
+            result.copyTo(depth_16.image);
+            depth_16.header.frame_id = "guidance_" + direction[CAMERA_ID] + "_left";
             depth_16.header.stamp = time_sys;
             depth_16.encoding = sensor_msgs::image_encodings::TYPE_16UC1;
             depth_image_pub.publish(depth_16.toImageMsg());
@@ -378,7 +387,7 @@ int TimerCallback(const ros::TimerEvent &)
     RETURN_IF_ERR(err_code);
     reset_config();
     change_flag++;
-    change_flag%=5;
+    change_flag %= 5;
     CAMERA_ID = e_vbus_index(change_flag);
     select_greyscale_image(CAMERA_ID, true);
     select_greyscale_image(CAMERA_ID, false);
@@ -519,6 +528,7 @@ int main(int argc, char **argv)
 
                 err_code = start_transfer();
                 RETURN_IF_ERR(err_code);
+
                 key = 0;
             }
         ros::spinOnce();
