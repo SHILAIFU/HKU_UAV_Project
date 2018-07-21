@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_tools")
-set(tf2_tools_VERSION "0.6.3")
+set(tf2_tools_VERSION "0.5.18")
 set(tf2_tools_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_tools_PACKAGE_FORMAT "1")
 set(tf2_tools_BUILD_DEPENDS "tf2_msgs" "tf2" "tf2_ros")

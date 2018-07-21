@@ -13,4 +13,4 @@ export PKG_CONFIG_PATH="/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/pkgconfig:
 export PWD="/home/wsn/HKU_UAV_Project/catkin_ws/build"
 export PYTHONPATH="/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/wsn/HKU_UAV_Project/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/wsn/catkin_ws/src:/home/wsn/HKU_UAV_Project/catkin_ws/src:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/wsn/HKU_UAV_Project/catkin_ws/src:$ROS_PACKAGE_PATH"

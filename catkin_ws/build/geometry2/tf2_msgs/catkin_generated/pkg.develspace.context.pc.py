@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "message_generation;geometry_msgs;actionlib_msgs".repla
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "tf2_msgs"
 PROJECT_SPACE_DIR = "/home/wsn/HKU_UAV_Project/catkin_ws/devel"
-PROJECT_VERSION = "0.6.3"
+PROJECT_VERSION = "0.5.18"

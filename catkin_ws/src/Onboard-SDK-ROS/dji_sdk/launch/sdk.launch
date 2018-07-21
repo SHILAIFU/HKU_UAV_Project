@@ -8,5 +8,6 @@
     <param name="align_time" type="bool" value="false"/>
     <param name="enc_key" type="string" value="cf16ccb721c6516aac95b2b03d15817903baa028a35e20df3b1a3456d815e58b"/>
     <param name="use_broadcast" type="bool" value="false"/>
+
     </node>
 </launch>

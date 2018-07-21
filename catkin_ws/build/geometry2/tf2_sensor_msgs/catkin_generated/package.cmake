@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_sensor_msgs")
-set(tf2_sensor_msgs_VERSION "0.6.3")
+set(tf2_sensor_msgs_VERSION "0.5.18")
 set(tf2_sensor_msgs_MAINTAINER "Vincent Rabaud <vincent.rabaud@gmail.com>")
 set(tf2_sensor_msgs_PACKAGE_FORMAT "2")
 set(tf2_sensor_msgs_BUILD_DEPENDS "cmake_modules" "eigen" "sensor_msgs" "tf2" "tf2_ros")

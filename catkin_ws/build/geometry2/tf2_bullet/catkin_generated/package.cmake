@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_bullet")
-set(tf2_bullet_VERSION "0.6.3")
+set(tf2_bullet_VERSION "0.5.18")
 set(tf2_bullet_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_bullet_PACKAGE_FORMAT "1")
 set(tf2_bullet_BUILD_DEPENDS "tf2" "bullet" "geometry_msgs")

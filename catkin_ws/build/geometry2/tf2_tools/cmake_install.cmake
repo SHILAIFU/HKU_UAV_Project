@@ -48,9 +48,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tf2_tools" TYPE PROGRAM FILES
-    "/home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2_tools/scripts/view_frames.py"
-    "/home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2_tools/scripts/echo.py"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tf2_tools" TYPE PROGRAM FILES "/home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2_tools/scripts/view_frames.py")
 endif()
 

@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_py")
-set(tf2_py_VERSION "0.6.3")
+set(tf2_py_VERSION "0.5.18")
 set(tf2_py_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_py_PACKAGE_FORMAT "1")
 set(tf2_py_BUILD_DEPENDS "tf2" "rospy")

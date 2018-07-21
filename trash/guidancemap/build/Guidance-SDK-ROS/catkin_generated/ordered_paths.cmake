@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/wsn/HKU_UAV_Project/guidancemap/devel/lib;/opt/ros/kinetic/lib")

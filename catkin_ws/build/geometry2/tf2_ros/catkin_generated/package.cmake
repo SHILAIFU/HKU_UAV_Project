@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_ros")
-set(tf2_ros_VERSION "0.6.3")
+set(tf2_ros_VERSION "0.5.18")
 set(tf2_ros_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_ros_PACKAGE_FORMAT "1")
 set(tf2_ros_BUILD_DEPENDS "actionlib" "actionlib_msgs" "geometry_msgs" "message_filters" "roscpp" "rosgraph" "rospy" "std_msgs" "tf2" "tf2_msgs" "tf2_py" "xmlrpcpp")

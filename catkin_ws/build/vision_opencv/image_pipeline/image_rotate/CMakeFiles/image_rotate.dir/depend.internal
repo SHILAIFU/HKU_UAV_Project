@@ -68,8 +68,6 @@ vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodele
  /opt/ros/kinetic/include/geometry_msgs/TransformStamped.h
  /opt/ros/kinetic/include/geometry_msgs/Vector3.h
  /opt/ros/kinetic/include/geometry_msgs/Vector3Stamped.h
- /opt/ros/kinetic/include/geometry_msgs/Wrench.h
- /opt/ros/kinetic/include/geometry_msgs/WrenchStamped.h
  /opt/ros/kinetic/include/kdl/frames.hpp
  /opt/ros/kinetic/include/kdl/frames.inl
  /opt/ros/kinetic/include/kdl/utilities/kdl-config.h

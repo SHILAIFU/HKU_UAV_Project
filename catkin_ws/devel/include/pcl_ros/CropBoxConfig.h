@@ -417,9 +417,9 @@ std::string output_frame;
     {
 CropBoxConfig::GroupDescription<CropBoxConfig::DEFAULT, CropBoxConfig> Default("Default", "", 0, 0, true, &CropBoxConfig::groups);
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __min__.min_x = -1000.0;
+      __min__.min_x = -5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.min_x = 1000.0;
+      __max__.min_x = 5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.min_x = -1.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -427,9 +427,9 @@ CropBoxConfig::GroupDescription<CropBoxConfig::DEFAULT, CropBoxConfig> Default("
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(CropBoxConfig::AbstractParamDescriptionConstPtr(new CropBoxConfig::ParamDescription<double>("min_x", "double", 0, "X coordinate of the minimum point of the box.", "", &CropBoxConfig::min_x)));
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __min__.max_x = -1000.0;
+      __min__.max_x = -5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.max_x = 1000.0;
+      __max__.max_x = 5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.max_x = 1.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -437,9 +437,9 @@ CropBoxConfig::GroupDescription<CropBoxConfig::DEFAULT, CropBoxConfig> Default("
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(CropBoxConfig::AbstractParamDescriptionConstPtr(new CropBoxConfig::ParamDescription<double>("max_x", "double", 0, "X coordinate of the maximum point of the box.", "", &CropBoxConfig::max_x)));
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __min__.min_y = -1000.0;
+      __min__.min_y = -5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.min_y = 1000.0;
+      __max__.min_y = 5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.min_y = -1.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -447,9 +447,9 @@ CropBoxConfig::GroupDescription<CropBoxConfig::DEFAULT, CropBoxConfig> Default("
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(CropBoxConfig::AbstractParamDescriptionConstPtr(new CropBoxConfig::ParamDescription<double>("min_y", "double", 0, "Y coordinate of the minimum point of the box.", "", &CropBoxConfig::min_y)));
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __min__.max_y = -1000.0;
+      __min__.max_y = -5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.max_y = 1000.0;
+      __max__.max_y = 5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.max_y = 1.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -457,9 +457,9 @@ CropBoxConfig::GroupDescription<CropBoxConfig::DEFAULT, CropBoxConfig> Default("
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(CropBoxConfig::AbstractParamDescriptionConstPtr(new CropBoxConfig::ParamDescription<double>("max_y", "double", 0, "Y coordinate of the maximum point of the box.", "", &CropBoxConfig::max_y)));
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __min__.min_z = -1000.0;
+      __min__.min_z = -5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.min_z = 1000.0;
+      __max__.min_z = 5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.min_z = -1.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -467,9 +467,9 @@ CropBoxConfig::GroupDescription<CropBoxConfig::DEFAULT, CropBoxConfig> Default("
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __param_descriptions__.push_back(CropBoxConfig::AbstractParamDescriptionConstPtr(new CropBoxConfig::ParamDescription<double>("min_z", "double", 0, "Z coordinate of the minimum point of the box.", "", &CropBoxConfig::min_z)));
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __min__.max_z = -1000.0;
+      __min__.max_z = -5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.max_z = 1000.0;
+      __max__.max_z = 5.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.max_z = 1.0;
 //#line 293 "/opt/ros/kinetic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"

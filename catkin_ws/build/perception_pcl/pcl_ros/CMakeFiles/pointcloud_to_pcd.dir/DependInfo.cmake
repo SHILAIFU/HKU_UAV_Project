@@ -45,7 +45,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/i386-linux-gnu/freetype2"
   "/usr/include/tcl"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/perception_pcl/pcl_ros/include"
-  "/home/wsn/HKU_UAV_Project/catkin_ws/src/perception_pcl/pcl_conversions/include"
+  "/home/wsn/HKU_UAV_Project/catkin_ws/src/pcl_conversions/include"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2_ros/include"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2/include"
   "/home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2_msgs/include"

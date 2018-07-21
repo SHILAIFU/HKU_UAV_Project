@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_msgs")
-set(tf2_msgs_VERSION "0.6.3")
+set(tf2_msgs_VERSION "0.5.18")
 set(tf2_msgs_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_msgs_PACKAGE_FORMAT "1")
 set(tf2_msgs_BUILD_DEPENDS "actionlib_msgs" "geometry_msgs" "message_generation")

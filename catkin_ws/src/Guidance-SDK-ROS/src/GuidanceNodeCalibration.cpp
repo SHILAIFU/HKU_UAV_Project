@@ -60,6 +60,7 @@ Mat g_disparity;
 int err_code;
 int change_flag = 0;
 
+bool imu_trans_done, vel_trans_done, od_trans_done, ulc_trans_done;
 std::ostream &operator<<(std::ostream &out, const e_sdk_err_code value)
 {
     const char *s = 0;
@@ -238,7 +239,7 @@ int my_callback(int data_type, int data_len, char *content)
             g_depth *= 7.8125;
 
             Mat result;
-            // blur(g_depth, result, Size(3, 3));            
+            // blur(g_depth, result, Size(3, 3));
 
             medianBlur(g_depth, result, 3);
             // GaussianBlur(g_depth, result, Size(3, 3), 0, 0);
@@ -284,6 +285,8 @@ int my_callback(int data_type, int data_len, char *content)
         g_imu.transform.rotation.y = imu_data->q[2];
         g_imu.transform.rotation.z = imu_data->q[3];
         imu_pub.publish(g_imu);
+
+        imu_trans_done = true;
     }
     /* velocity */
     if (e_velocity == data_type && NULL != content)
@@ -300,6 +303,8 @@ int my_callback(int data_type, int data_len, char *content)
         g_vo.vector.y = 0.001f * vo->vy;
         g_vo.vector.z = 0.001f * vo->vz;
         velocity_pub.publish(g_vo);
+
+        vel_trans_done = true;
     }
 
     /* obstacle distance */
@@ -322,6 +327,8 @@ int my_callback(int data_type, int data_len, char *content)
         for (int i = 0; i < CAMERA_PAIR_NUM; ++i)
             g_oa.ranges[i] = 0.01f * oa->distance[i];
         obstacle_distance_pub.publish(g_oa);
+
+        od_trans_done = true;
     }
 
     /* ultrasonic */
@@ -346,6 +353,7 @@ int my_callback(int data_type, int data_len, char *content)
             g_ul.intensities[d] = 1.0 * ultrasonic->reliability[d];
         }
         ultrasonic_pub.publish(g_ul);
+        ulc_trans_done = true;
     }
 
     /* emotion */
@@ -383,18 +391,25 @@ int my_callback(int data_type, int data_len, char *content)
 
 int TimerCallback(const ros::TimerEvent &)
 {
-    err_code = stop_transfer();
-    RETURN_IF_ERR(err_code);
-    reset_config();
-    change_flag++;
-    change_flag %= 5;
-    CAMERA_ID = e_vbus_index(change_flag);
-    select_greyscale_image(CAMERA_ID, true);
-    select_greyscale_image(CAMERA_ID, false);
-    select_depth_image(CAMERA_ID);
+    // if (imu_trans_done&&vel_trans_done&&od_trans_done&&ulc_trans_done)
+    // {
+        err_code = stop_transfer();
+        RETURN_IF_ERR(err_code);
+        reset_config();
+        change_flag++;
+        change_flag %= 5;
+        CAMERA_ID = e_vbus_index(change_flag);
+        select_greyscale_image(CAMERA_ID, true);
+        select_greyscale_image(CAMERA_ID, false);
+        select_depth_image(CAMERA_ID);
 
-    err_code = start_transfer();
-    RETURN_IF_ERR(err_code);
+        err_code = start_transfer();
+        RETURN_IF_ERR(err_code);
+        // imu_trans_done = false;
+        // vel_trans_done = false;
+        // od_trans_done = false;
+        // ulc_trans_done = false;
+    // }
     return 0;
 }
 
@@ -416,7 +431,7 @@ int main(int argc, char **argv)
     cam_info_right_pub = my_node.advertise<sensor_msgs::CameraInfo>("/guidance/right/camera_info", 1);
     cam_info_left_pub = my_node.advertise<sensor_msgs::CameraInfo>("/guidance/left/camera_info", 1);
 
-    ros::Timer timer = my_node.createTimer(ros::Duration(0.002), &TimerCallback, false);
+    ros::Timer timer = my_node.createTimer(ros::Duration(0.005), &TimerCallback, false);
     /* initialize guidance */
     reset_config();
     err_code = init_transfer();
@@ -470,6 +485,11 @@ int main(int argc, char **argv)
     br.reset(new tf2_ros::TransformBroadcaster());
 
     std::cout << "start_transfer" << std::endl;
+
+    imu_trans_done = false;
+    vel_trans_done = false;
+    od_trans_done = false;
+    ulc_trans_done = false;
 
     while (ros::ok())
     {

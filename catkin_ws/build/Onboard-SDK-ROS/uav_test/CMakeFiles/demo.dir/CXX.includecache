@@ -247,6 +247,8 @@ uav_test/demo_flight_control.h
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/uav_test/demo_flight_control.h
 dji_sdk/dji_sdk.h
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/dji_sdk/dji_sdk.h
+sensor_msgs/NavSatFix.h
+-
 uav_test/Config.h
 /home/wsn/HKU_UAV_Project/catkin_ws/src/Onboard-SDK-ROS/uav_test/src/uav_test/Config.h
 uav_test/pid.h

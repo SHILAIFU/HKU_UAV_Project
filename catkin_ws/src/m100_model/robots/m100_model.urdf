@@ -1,0 +1,43 @@
+<robot
+  name="m100_model">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000745223149255591 -0.0371895972108751 0.0163791144251169"
+        rpy="0 0 0" />
+      <mass
+        value="1.1451099521777" />
+      <inertia
+        ixx="0.015396065349527"
+        ixy="-0.00043978501843162"
+        ixz="8.55842489057197E-05"
+        iyy="0.025712319950537"
+        iyz="0.000579664840800132"
+        izz="0.0147281444265686" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://m100_model/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://m100_model/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

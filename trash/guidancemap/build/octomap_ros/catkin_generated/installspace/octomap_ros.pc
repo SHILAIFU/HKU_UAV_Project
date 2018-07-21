@@ -1,8 +1,0 @@
-prefix=/home/wsn/HKU_UAV_Project/guidancemap/install
-
-Name: octomap_ros
-Description: Description of octomap_ros
-Version: 0.4.0
-Cflags: -I/home/wsn/HKU_UAV_Project/guidancemap/install/include -I/opt/ros/kinetic/include
-Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/install/lib -loctomap_ros -l:/opt/ros/kinetic/lib/liboctomap.so -l:/opt/ros/kinetic/lib/liboctomath.so
-Requires: sensor_msgs tf octomap_msgs

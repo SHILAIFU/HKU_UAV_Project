@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_kdl")
-set(tf2_kdl_VERSION "0.6.3")
+set(tf2_kdl_VERSION "0.5.18")
 set(tf2_kdl_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_kdl_PACKAGE_FORMAT "2")
 set(tf2_kdl_BUILD_DEPENDS "cmake_modules" "eigen" "orocos_kdl" "tf2" "tf2_ros")

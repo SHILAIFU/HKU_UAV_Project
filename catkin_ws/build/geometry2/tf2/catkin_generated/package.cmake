@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2")
-set(tf2_VERSION "0.6.3")
+set(tf2_VERSION "0.5.18")
 set(tf2_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(tf2_PACKAGE_FORMAT "1")
 set(tf2_BUILD_DEPENDS "libconsole-bridge-dev" "geometry_msgs" "rostime" "tf2_msgs")

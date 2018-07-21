@@ -111,17 +111,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -132,6 +121,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -226,6 +226,21 @@ _run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch/fast:
 .PHONY : _run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch/fast
 
 # Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule
+
+# Convenience name for target.
+run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule
+
+.PHONY : run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch
+
+# fast build rule for target.
+run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/build
+.PHONY : run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch/fast
+
+# Convenience name for target.
 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_statistical_outlier_removal__gui_false.launch.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_statistical_outlier_removal__gui_false.launch.dir/rule
 .PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_statistical_outlier_removal__gui_false.launch.dir/rule
@@ -286,64 +301,64 @@ run_tests_pcl_ros_rostest_sample_normal_3d__gui_false.launch/fast:
 .PHONY : run_tests_pcl_ros_rostest_sample_normal_3d__gui_false.launch/fast
 
 # Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule
+perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule
 
 # Convenience name for target.
-_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule
+pointcloud_to_pcd: perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule
 
-.PHONY : _run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch
+.PHONY : pointcloud_to_pcd
 
 # fast build rule for target.
-_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/build
-.PHONY : _run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch/fast
+pointcloud_to_pcd/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/build
+.PHONY : pointcloud_to_pcd/fast
 
 # Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule
 
 # Convenience name for target.
-_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+bag_to_pcd: perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule
 
-.PHONY : _run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch
+.PHONY : bag_to_pcd
 
 # fast build rule for target.
-_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build
-.PHONY : _run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast
+bag_to_pcd/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/build.make perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/build
+.PHONY : bag_to_pcd/fast
 
 # Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule
 
 # Convenience name for target.
-run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+pcd_to_pointcloud: perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule
 
-.PHONY : run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch
+.PHONY : pcd_to_pointcloud
 
 # fast build rule for target.
-run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build
-.PHONY : run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast
+pcd_to_pointcloud/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/build
+.PHONY : pcd_to_pointcloud/fast
 
 # Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule
+perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule
 
 # Convenience name for target.
-run_tests_pcl_ros_rostest: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule
+pcl_ros_surface: perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule
 
-.PHONY : run_tests_pcl_ros_rostest
+.PHONY : pcl_ros_surface
 
 # fast build rule for target.
-run_tests_pcl_ros_rostest/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/build
-.PHONY : run_tests_pcl_ros_rostest/fast
+pcl_ros_surface/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/build
+.PHONY : pcl_ros_surface/fast
 
 # Convenience name for target.
 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_filters.dir/rule:
@@ -376,6 +391,81 @@ pcl_ros_gencfg/fast:
 .PHONY : pcl_ros_gencfg/fast
 
 # Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule
+
+# Convenience name for target.
+_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/rule
+
+.PHONY : _run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch
+
+# fast build rule for target.
+_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch.dir/build
+.PHONY : _run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+
+# Convenience name for target.
+_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+
+.PHONY : _run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch
+
+# fast build rule for target.
+_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build
+.PHONY : _run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule
+
+# Convenience name for target.
+run_tests_pcl_ros_rostest: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/rule
+
+.PHONY : run_tests_pcl_ros_rostest
+
+# fast build rule for target.
+run_tests_pcl_ros_rostest/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest.dir/build
+.PHONY : run_tests_pcl_ros_rostest/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule
+
+# Convenience name for target.
+pcl_ros_tf: perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule
+
+.PHONY : pcl_ros_tf
+
+# fast build rule for target.
+pcl_ros_tf/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/build
+.PHONY : pcl_ros_tf/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule
+
+# Convenience name for target.
+_run_tests_pcl_ros_rostest: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule
+
+.PHONY : _run_tests_pcl_ros_rostest
+
+# fast build rule for target.
+_run_tests_pcl_ros_rostest/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/build
+.PHONY : _run_tests_pcl_ros_rostest/fast
+
+# Convenience name for target.
 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_features.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_features.dir/rule
 .PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_features.dir/rule
@@ -406,81 +496,6 @@ test_tf_message_filter_pcl/fast:
 .PHONY : test_tf_message_filter_pcl/fast
 
 # Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_eus: perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-
-.PHONY : topic_tools_generate_messages_eus
-
-# fast build rule for target.
-topic_tools_generate_messages_eus/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_eus.dir/build
-.PHONY : topic_tools_generate_messages_eus/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule
-
-# Convenience name for target.
-_run_tests_pcl_ros_rostest: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/rule
-
-.PHONY : _run_tests_pcl_ros_rostest
-
-# fast build rule for target.
-_run_tests_pcl_ros_rostest/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros_rostest.dir/build
-.PHONY : _run_tests_pcl_ros_rostest/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule
-
-# Convenience name for target.
-pcl_ros_tf: perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/rule
-
-.PHONY : pcl_ros_tf
-
-# fast build rule for target.
-pcl_ros_tf/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcl_ros_tf.dir/build
-.PHONY : pcl_ros_tf/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_nodejs: perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-.PHONY : topic_tools_generate_messages_nodejs
-
-# fast build rule for target.
-topic_tools_generate_messages_nodejs/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
-.PHONY : topic_tools_generate_messages_nodejs/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule
-
-# Convenience name for target.
-table_scene_lms400.pcd: perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule
-
-.PHONY : table_scene_lms400.pcd
-
-# fast build rule for target.
-table_scene_lms400.pcd/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/build.make perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/build
-.PHONY : table_scene_lms400.pcd/fast
-
-# Convenience name for target.
 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_segmentation.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_segmentation.dir/rule
 .PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_segmentation.dir/rule
@@ -496,169 +511,19 @@ pcl_ros_segmentation/fast:
 .PHONY : pcl_ros_segmentation/fast
 
 # Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule
+perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule
 
 # Convenience name for target.
-clean_test_results_pcl_ros: perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule
+table_scene_lms400.pcd: perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/rule
 
-.PHONY : clean_test_results_pcl_ros
+.PHONY : table_scene_lms400.pcd
 
 # fast build rule for target.
-clean_test_results_pcl_ros/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/build.make perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/build
-.PHONY : clean_test_results_pcl_ros/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule
-
-# Convenience name for target.
-pcl_ros_io: perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule
-
-.PHONY : pcl_ros_io
-
-# fast build rule for target.
-pcl_ros_io/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/build
-.PHONY : pcl_ros_io/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule
-
-# Convenience name for target.
-_run_tests_pcl_ros: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule
-
-.PHONY : _run_tests_pcl_ros
-
-# fast build rule for target.
-_run_tests_pcl_ros/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/build
-.PHONY : _run_tests_pcl_ros/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule
-
-# Convenience name for target.
-run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/rule
-
-.PHONY : run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch
-
-# fast build rule for target.
-run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch.dir/build
-.PHONY : run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_py.dir/build.make perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule
-
-# Convenience name for target.
-pcl_ros_surface: perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/rule
-
-.PHONY : pcl_ros_surface
-
-# fast build rule for target.
-pcl_ros_surface/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcl_ros_surface.dir/build
-.PHONY : pcl_ros_surface/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule
-
-# Convenience name for target.
-pcd_to_pointcloud: perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/rule
-
-.PHONY : pcd_to_pointcloud
-
-# fast build rule for target.
-pcd_to_pointcloud/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcd_to_pointcloud.dir/build
-.PHONY : pcd_to_pointcloud/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule
-
-# Convenience name for target.
-pointcloud_to_pcd: perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/rule
-
-.PHONY : pointcloud_to_pcd
-
-# fast build rule for target.
-pointcloud_to_pcd/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pointcloud_to_pcd.dir/build
-.PHONY : pointcloud_to_pcd/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule
-
-# Convenience name for target.
-bag_to_pcd: perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/rule
-
-.PHONY : bag_to_pcd
-
-# fast build rule for target.
-bag_to_pcd/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/build.make perception_pcl/pcl_ros/CMakeFiles/bag_to_pcd.dir/build
-.PHONY : bag_to_pcd/fast
-
-# Convenience name for target.
-perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make perception_pcl/pcl_ros/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
+table_scene_lms400.pcd/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/build.make perception_pcl/pcl_ros/CMakeFiles/table_scene_lms400.pcd.dir/build
+.PHONY : table_scene_lms400.pcd/fast
 
 # Convenience name for target.
 perception_pcl/pcl_ros/CMakeFiles/convert_pcd_to_image.dir/rule:
@@ -706,6 +571,21 @@ download/fast:
 .PHONY : download/fast
 
 # Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+
+# Convenience name for target.
+run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/rule
+
+.PHONY : run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch
+
+# fast build rule for target.
+run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch.dir/build
+.PHONY : run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch/fast
+
+# Convenience name for target.
 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros.dir/rule:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros.dir/rule
 .PHONY : perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros.dir/rule
@@ -719,6 +599,51 @@ run_tests_pcl_ros: perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros.dir/rule
 run_tests_pcl_ros/fast:
 	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros.dir/build.make perception_pcl/pcl_ros/CMakeFiles/run_tests_pcl_ros.dir/build
 .PHONY : run_tests_pcl_ros/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule
+
+# Convenience name for target.
+_run_tests_pcl_ros: perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/rule
+
+.PHONY : _run_tests_pcl_ros
+
+# fast build rule for target.
+_run_tests_pcl_ros/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/build.make perception_pcl/pcl_ros/CMakeFiles/_run_tests_pcl_ros.dir/build
+.PHONY : _run_tests_pcl_ros/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule
+
+# Convenience name for target.
+pcl_ros_io: perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/rule
+
+.PHONY : pcl_ros_io
+
+# fast build rule for target.
+pcl_ros_io/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/build.make perception_pcl/pcl_ros/CMakeFiles/pcl_ros_io.dir/build
+.PHONY : pcl_ros_io/fast
+
+# Convenience name for target.
+perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule
+.PHONY : perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule
+
+# Convenience name for target.
+clean_test_results_pcl_ros: perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/rule
+
+.PHONY : clean_test_results_pcl_ros
+
+# fast build rule for target.
+clean_test_results_pcl_ros/fast:
+	cd /home/wsn/HKU_UAV_Project/catkin_ws/build && $(MAKE) -f perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/build.make perception_pcl/pcl_ros/CMakeFiles/clean_test_results_pcl_ros.dir/build
+.PHONY : clean_test_results_pcl_ros/fast
 
 src/pcl_ros/features/boundary.o: src/pcl_ros/features/boundary.cpp.o
 
@@ -1815,41 +1740,36 @@ help:
 	@echo "... run_tests_pcl_ros_rostest_sample_convex_hull__gui_false.launch"
 	@echo "... run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch"
 	@echo "... _run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch"
+	@echo "... run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch"
 	@echo "... _run_tests_pcl_ros_rostest_sample_statistical_outlier_removal__gui_false.launch"
 	@echo "... run_tests_pcl_ros_rostest_sample_statistical_outlier_removal__gui_false.launch"
 	@echo "... _run_tests_pcl_ros_rostest_sample_normal_3d__gui_false.launch"
 	@echo "... run_tests_pcl_ros_rostest_sample_normal_3d__gui_false.launch"
-	@echo "... _run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch"
-	@echo "... _run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch"
-	@echo "... edit_cache"
-	@echo "... run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch"
-	@echo "... run_tests_pcl_ros_rostest"
+	@echo "... pointcloud_to_pcd"
+	@echo "... bag_to_pcd"
+	@echo "... pcd_to_pointcloud"
+	@echo "... pcl_ros_surface"
 	@echo "... pcl_ros_filters"
 	@echo "... pcl_ros_gencfg"
+	@echo "... _run_tests_pcl_ros_rostest_sample_extract_clusters__gui_false.launch"
+	@echo "... _run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch"
+	@echo "... run_tests_pcl_ros_rostest"
+	@echo "... pcl_ros_tf"
+	@echo "... _run_tests_pcl_ros_rostest"
 	@echo "... install/strip"
 	@echo "... pcl_ros_features"
 	@echo "... test_tf_message_filter_pcl"
-	@echo "... topic_tools_generate_messages_eus"
-	@echo "... _run_tests_pcl_ros_rostest"
-	@echo "... pcl_ros_tf"
-	@echo "... topic_tools_generate_messages_nodejs"
-	@echo "... table_scene_lms400.pcd"
 	@echo "... pcl_ros_segmentation"
-	@echo "... clean_test_results_pcl_ros"
-	@echo "... pcl_ros_io"
-	@echo "... _run_tests_pcl_ros"
-	@echo "... run_tests_pcl_ros_rostest_sample_voxel_grid__gui_false.launch"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... pcl_ros_surface"
-	@echo "... pcd_to_pointcloud"
-	@echo "... pointcloud_to_pcd"
-	@echo "... bag_to_pcd"
-	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... table_scene_lms400.pcd"
 	@echo "... convert_pcd_to_image"
 	@echo "... convert_pointcloud_to_image"
 	@echo "... download"
+	@echo "... edit_cache"
+	@echo "... run_tests_pcl_ros_rostest_tests_test_tf_message_filter_pcl.launch"
 	@echo "... run_tests_pcl_ros"
+	@echo "... _run_tests_pcl_ros"
+	@echo "... pcl_ros_io"
+	@echo "... clean_test_results_pcl_ros"
 	@echo "... src/pcl_ros/features/boundary.o"
 	@echo "... src/pcl_ros/features/boundary.i"
 	@echo "... src/pcl_ros/features/boundary.s"

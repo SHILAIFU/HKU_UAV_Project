@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "geometry2")
-set(geometry2_VERSION "0.6.3")
+set(geometry2_VERSION "0.5.18")
 set(geometry2_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(geometry2_PACKAGE_FORMAT "1")
 set(geometry2_BUILD_DEPENDS )

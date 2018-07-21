@@ -336,7 +336,7 @@ tf2_ros/buffer.h
 boost/thread.hpp
 /home/wsn/HKU_UAV_Project/catkin_ws/src/geometry2/tf2_ros/include/tf2_ros/boost/thread.hpp
 
-/home/wsn/HKU_UAV_Project/catkin_ws/src/perception_pcl/pcl_conversions/include/pcl_conversions/pcl_conversions.h
+/home/wsn/HKU_UAV_Project/catkin_ws/src/pcl_conversions/include/pcl_conversions/pcl_conversions.h
 vector
 -
 ros/ros.h

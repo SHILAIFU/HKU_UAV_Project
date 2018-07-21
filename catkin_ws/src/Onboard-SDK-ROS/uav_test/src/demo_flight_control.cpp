@@ -1,6 +1,6 @@
 #include "uav_test/demo_flight_control.h"
 #include "dji_sdk/dji_sdk.h"
-
+#include <sensor_msgs/NavSatFix.h>
 #include "uav_test/Config.h"
 #include "uav_test/pid.h"
 
@@ -14,6 +14,8 @@ ros::ServiceClient query_version_service;
 
 ros::Publisher ctrlPosYawPub;
 ros::Publisher ctrlBrakePub;
+
+// ros::Publisher sensormsg_GPS;
 
 // global variables for subscribed topics
 uint8_t flight_status = 255;
@@ -44,11 +46,12 @@ int main(int argc, char **argv)
   ros::Subscriber flightStatusSub = nh.subscribe("dji_sdk/flight_status", 10, &flight_status_callback);
   ros::Subscriber displayModeSub = nh.subscribe("dji_sdk/display_mode", 10, &display_mode_callback);
   ros::Subscriber localPosition = nh.subscribe("dji_sdk/local_position", 10, &local_position_callback);
-
+    
   // Publish the control signal
   ctrlPosYawPub = nh.advertise<sensor_msgs::Joy>("dji_sdk/flight_control_setpoint_ENUposition_yaw", 10);
   ctrlBrakePub = nh.advertise<sensor_msgs::Joy>("dji_sdk/flight_control_setpoint_generic", 10);
-
+  
+  // sensormsg_GPS = nh.advertise<sensor_msgs::NavSatFix>("demo/sensormsg_GPS",10);
   // Basic services
   sdk_ctrl_authority_service = nh.serviceClient<dji_sdk::SDKControlAuthority>("dji_sdk/sdk_control_authority");
   drone_task_service = nh.serviceClient<dji_sdk::DroneTaskControl>("dji_sdk/drone_task_control");
@@ -327,6 +330,7 @@ void local_position_callback(const geometry_msgs::PointStamped::ConstPtr &msg)
 void gps_callback(const sensor_msgs::NavSatFix::ConstPtr &msg)
 {
   current_gps = *msg;
+  // sensormsg_GPS.publish(*msg);
 }
 
 void flight_status_callback(const std_msgs::UInt8::ConstPtr &msg)

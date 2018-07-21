@@ -67,8 +67,6 @@ vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodele
 vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/TransformStamped.h
 vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3.h
 vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Vector3Stamped.h
-vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Wrench.h
-vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/geometry_msgs/WrenchStamped.h
 vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/kdl/frames.hpp
 vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/kdl/frames.inl
 vision_opencv/image_pipeline/image_rotate/CMakeFiles/image_rotate.dir/src/nodelet/image_rotate_nodelet.cpp.o: /opt/ros/kinetic/include/kdl/utilities/kdl-config.h

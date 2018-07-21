@@ -1,8 +1,0 @@
-prefix=/home/wsn/HKU_UAV_Project/guidancemap/install
-
-Name: image_publisher
-Description: Description of image_publisher
-Version: 1.12.23
-Cflags: -I/home/wsn/HKU_UAV_Project/guidancemap/install/include
-Libs: -L/home/wsn/HKU_UAV_Project/guidancemap/install/lib 
-Requires: 

@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "test_tf2")
-set(test_tf2_VERSION "0.6.3")
+set(test_tf2_VERSION "0.5.18")
 set(test_tf2_MAINTAINER "Tully Foote <tfoote@osrfoundation.org>")
 set(test_tf2_PACKAGE_FORMAT "1")
 set(test_tf2_BUILD_DEPENDS "rosconsole" "roscpp" "rostest" "tf" "tf2" "tf2_bullet" "tf2_ros" "tf2_geometry_msgs" "tf2_kdl" "tf2_msgs")

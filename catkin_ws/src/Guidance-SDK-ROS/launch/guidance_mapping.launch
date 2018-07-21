@@ -6,7 +6,6 @@
 	        <remap from="/guidance/depth_image" to= "/image_raw" />
 	</node>
 
-
 <!-- Transform from base_link to the various sensors -->
 <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_down" args="0.0 0.0 0.105 0.0 0.0 -1.57079632679 base_link guidance_down" />
 <node pkg="tf2_ros" type="static_transform_publisher" name="guidance_front" args="0.10 0.0 0.09 1.57079632679 0 -1.57079632679 base_link guidance_front" />

@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "tf2_eigen")
-set(tf2_eigen_VERSION "0.6.3")
+set(tf2_eigen_VERSION "0.5.18")
 set(tf2_eigen_MAINTAINER "Koji Terada <terakoji@gmail.com>")
 set(tf2_eigen_PACKAGE_FORMAT "2")
 set(tf2_eigen_BUILD_DEPENDS "cmake_modules" "eigen" "geometry_msgs" "tf2")

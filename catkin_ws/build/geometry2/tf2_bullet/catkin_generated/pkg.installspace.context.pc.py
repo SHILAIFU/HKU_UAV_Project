@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "tf2_bullet"
 PROJECT_SPACE_DIR = "/home/wsn/HKU_UAV_Project/catkin_ws/install"
-PROJECT_VERSION = "0.6.3"
+PROJECT_VERSION = "0.5.18"

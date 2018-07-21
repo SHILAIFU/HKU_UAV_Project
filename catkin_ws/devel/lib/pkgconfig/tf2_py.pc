@@ -2,7 +2,7 @@ prefix=/home/wsn/HKU_UAV_Project/catkin_ws/devel
 
 Name: tf2_py
 Description: Description of tf2_py
-Version: 0.6.3
+Version: 0.5.18
 Cflags: 
 Libs: -L/home/wsn/HKU_UAV_Project/catkin_ws/devel/lib 
 Requires: rospy tf2
